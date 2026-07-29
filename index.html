@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===================== SEO ===================== -->
+  <title>DMS System — Électricité, Plomberie, Chauffage & Climatisation en Touraine (37)</title>
+  <meta name="description" content="DMS System, entreprise à Chambray-lès-Tours : électricité, plomberie, chauffage et climatisation pour particuliers et professionnels. Dépannage sous 48h en Indre-et-Loire (37) et Loir-et-Cher (41)." />
+  <meta name="keywords" content="électricien Tours, plombier Chambray-lès-Tours, chauffagiste Touraine, climatisation Indre-et-Loire, dépannage urgent 37, MaPrimeRénov Tours" />
+  <meta name="author" content="DMS System" />
+  <meta property="og:title" content="DMS System — Vos 4 métiers du bâtiment en Touraine" />
+  <meta property="og:description" content="Électricité, Plomberie, Chauffage, Climatisation. Interventions rapides en Indre-et-Loire (37) et Loir-et-Cher (41)." />
+  <meta property="og:type" content="website" />
+
+  <!-- ===================== Tailwind CSS (CDN) ===================== -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Configuration Tailwind : palette officielle extraite du logo DMS System
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            night:   '#0A1E3F', // Fond sombre principal (bleu nuit profond)
+            brand:   '#0B2A6B', // Couleur de marque / en-tête (bleu foncé)
+            sky:     '#81BBEB', // Couleur secondaire (bleu ciel)
+            energy:  '#E1B225', // Pôle Énergie / Électricité (jaune or)
+            plumb:   '#0B4DA2', // Pôle Plomberie (bleu royal)
+            climate: '#37A1E2', // Pôle Climatisation (cyan)
+            heat:    '#D93638', // Pôle Chauffage (rouge)
+          },
+          fontFamily: {
+            sans: ['Poppins', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Polices Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Feuille de styles complémentaire (animations personnalisées) -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-night text-white font-sans antialiased overflow-x-hidden">
+
+  <!-- ============================================================= -->
+  <!-- HEADER FIXE (sticky + backdrop-blur)                          -->
+  <!-- ============================================================= -->
+  <header id="header" class="fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-night/70 backdrop-blur-xl border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+
+      <!-- Barre supérieure : coordonnées + urgence -->
+      <div class="hidden lg:flex items-center justify-between py-2 text-xs text-sky/80 border-b border-white/5">
+        <span>📍 Chambray-lès-Tours — Interventions en Indre-et-Loire (37) &amp; Loir-et-Cher (41)</span>
+        <span class="flex items-center gap-4">
+          <span>✅ 15 ans d'expérience</span>
+          <a href="mailto:contact@dms-system.fr" class="hover:text-white transition">✉️ contact@dms-system.fr</a>
+        </span>
+      </div>
+
+      <!-- Barre principale -->
+      <div class="flex items-center justify-between h-16 lg:h-20 gap-4">
+
+        <!-- Logo -->
+        <a href="#hero" class="flex items-center gap-3 shrink-0">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-brand to-plumb grid place-items-center font-extrabold text-lg shadow-lg shadow-plumb/30 ring-1 ring-sky/30">
+            DMS
+          </div>
+          <div class="leading-tight">
+            <div class="font-extrabold text-lg tracking-wide">DMS <span class="text-sky">System</span></div>
+            <div class="text-[10px] uppercase tracking-[0.2em] text-white/50">Électricité · Plomberie · CVC</div>
+          </div>
+        </a>
+
+        <!-- Navigation (desktop) -->
+        <nav id="main-nav" class="hidden xl:flex items-center gap-1 text-sm font-medium">
+          <a href="#electricite" class="nav-link px-3 py-2 rounded-lg hover:bg-white/10 transition">Électricité</a>
+          <a href="#plomberie"   class="nav-link px-3 py-2 rounded-lg hover:bg-white/10 transition">Plomberie</a>
+          <a href="#chauffage"   class="nav-link px-3 py-2 rounded-lg hover:bg-white/10 transition">Chauffage</a>
+          <a href="#climatisation" class="nav-link px-3 py-2 rounded-lg hover:bg-white/10 transition">Climatisation</a>
+          <!-- Onglets Pro uniquement (injectés / masqués via JS) -->
+          <a href="#contact" data-pro-only class="nav-link hidden px-3 py-2 rounded-lg hover:bg-white/10 transition text-sky">Copropriété</a>
+          <a href="#depannage" data-pro-only class="nav-link hidden px-3 py-2 rounded-lg hover:bg-white/10 transition text-sky">Maintenance</a>
+          <a href="#entreprise" class="nav-link px-3 py-2 rounded-lg hover:bg-white/10 transition">Entreprise</a>
+          <a href="#realisations" class="nav-link px-3 py-2 rounded-lg hover:bg-white/10 transition">Réalisations</a>
+          <a href="#contact" class="nav-link px-3 py-2 rounded-lg hover:bg-white/10 transition">Contact</a>
+        </nav>
+
+        <!-- Actions droite -->
+        <div class="flex items-center gap-2 sm:gap-3">
+
+          <!-- SWITCH Particuliers / Professionnels -->
+          <div id="audience-toggle" class="relative hidden sm:flex items-center bg-white/10 rounded-full p-1 ring-1 ring-white/15 text-xs font-semibold select-none">
+            <!-- Pastille glissante -->
+            <span id="toggle-pill" class="absolute top-1 bottom-1 left-1 w-[calc(50%-4px)] rounded-full bg-gradient-to-r from-sky to-climate shadow-md transition-transform duration-300 ease-out"></span>
+            <button data-audience="particuliers" class="audience-btn relative z-10 px-4 py-1.5 rounded-full text-night transition-colors">Particuliers</button>
+            <button data-audience="professionnels" class="audience-btn relative z-10 px-4 py-1.5 rounded-full text-white/70 transition-colors">Professionnels</button>
+          </div>
+
+          <!-- Bouton urgence -->
+          <a href="tel:0247480518" class="hidden md:flex items-center gap-2 px-3 py-2 rounded-lg bg-heat/90 hover:bg-heat text-white font-semibold text-sm shadow-lg shadow-heat/30 transition group">
+            <span class="animate-pulse-ring">📞</span>
+            <span>02 47 48 05 18</span>
+          </a>
+
+          <!-- CTA Devis -->
+          <button data-open-quote class="btn-pulse px-4 py-2.5 rounded-lg bg-energy text-night font-bold text-sm shadow-lg shadow-energy/40 hover:brightness-105 transition">
+            Devis Gratuit
+          </button>
+
+          <!-- Burger (mobile) -->
+          <button id="burger" class="xl:hidden w-10 h-10 grid place-items-center rounded-lg bg-white/10 ring-1 ring-white/15" aria-label="Menu">
+            <span class="text-xl">☰</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu mobile déroulant -->
+    <div id="mobile-menu" class="xl:hidden hidden bg-night/95 backdrop-blur-xl border-t border-white/10 px-4 py-4">
+      <nav class="flex flex-col gap-1 text-sm font-medium">
+        <a href="#electricite" class="mobile-link px-3 py-3 rounded-lg hover:bg-white/10">Électricité</a>
+        <a href="#plomberie"   class="mobile-link px-3 py-3 rounded-lg hover:bg-white/10">Plomberie</a>
+        <a href="#chauffage"   class="mobile-link px-3 py-3 rounded-lg hover:bg-white/10">Chauffage</a>
+        <a href="#climatisation" class="mobile-link px-3 py-3 rounded-lg hover:bg-white/10">Climatisation</a>
+        <a href="#contact" data-pro-only class="mobile-link hidden px-3 py-3 rounded-lg hover:bg-white/10 text-sky">Copropriété</a>
+        <a href="#depannage" data-pro-only class="mobile-link hidden px-3 py-3 rounded-lg hover:bg-white/10 text-sky">Maintenance</a>
+        <a href="#entreprise" class="mobile-link px-3 py-3 rounded-lg hover:bg-white/10">Entreprise</a>
+        <a href="#realisations" class="mobile-link px-3 py-3 rounded-lg hover:bg-white/10">Réalisations</a>
+        <a href="#contact" class="mobile-link px-3 py-3 rounded-lg hover:bg-white/10">Contact</a>
+        <!-- Switch audience (mobile) -->
+        <div class="flex items-center bg-white/10 rounded-full p-1 mt-3 text-xs font-semibold self-start">
+          <button data-audience="particuliers" class="audience-btn px-4 py-1.5 rounded-full bg-sky text-night">Particuliers</button>
+          <button data-audience="professionnels" class="audience-btn px-4 py-1.5 rounded-full text-white/70">Professionnels</button>
+        </div>
+        <a href="tel:0247480518" class="mt-3 px-3 py-3 rounded-lg bg-heat text-center font-semibold">📞 Urgence : 02 47 48 05 18</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- ============================================================= -->
+  <!-- HERO                                                          -->
+  <!-- ============================================================= -->
+  <section id="hero" class="relative pt-32 lg:pt-44 pb-20 overflow-hidden">
+    <!-- Halos décoratifs -->
+    <div class="pointer-events-none absolute -top-24 -left-24 w-96 h-96 rounded-full bg-plumb/30 blur-3xl"></div>
+    <div class="pointer-events-none absolute top-20 right-0 w-96 h-96 rounded-full bg-climate/20 blur-3xl"></div>
+    <div class="pointer-events-none absolute bottom-0 left-1/3 w-80 h-80 rounded-full bg-energy/10 blur-3xl"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-12 items-center">
+      <!-- Texte -->
+      <div class="reveal">
+        <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 ring-1 ring-white/15 text-xs font-semibold text-sky mb-6">
+          <span class="w-2 h-2 rounded-full bg-energy animate-pulse"></span>
+          Artisan de confiance en Touraine depuis 15 ans
+        </span>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.05] mb-6">
+          Vos <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky via-climate to-energy">4 métiers</span> du bâtiment,
+          <br class="hidden sm:block" /> un seul interlocuteur.
+        </h1>
+        <p id="hero-subtitle" class="text-lg text-white/70 max-w-xl mb-8 fade-swap">
+          Électricité, plomberie, chauffage et climatisation pour votre habitat.
+          Un accompagnement clé en main, du dépannage à la rénovation énergétique.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <button data-open-quote class="px-6 py-3.5 rounded-xl bg-energy text-night font-bold shadow-lg shadow-energy/40 hover:brightness-105 hover:-translate-y-0.5 transition">
+            Obtenir mon devis gratuit
+          </button>
+          <a href="#poles" class="px-6 py-3.5 rounded-xl bg-white/10 ring-1 ring-white/20 font-semibold hover:bg-white/20 transition">
+            Découvrir nos pôles
+          </a>
+        </div>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-3 gap-4 mt-12 max-w-md">
+          <div><div class="text-3xl font-extrabold text-sky">15+</div><div class="text-xs text-white/60">ans d'expérience</div></div>
+          <div><div class="text-3xl font-extrabold text-sky">48h</div><div class="text-xs text-white/60">délai dépannage</div></div>
+          <div><div class="text-3xl font-extrabold text-sky">2</div><div class="text-xs text-white/60">départements (37 · 41)</div></div>
+        </div>
+      </div>
+
+      <!-- Illustration : 4 pôles en mosaïque -->
+      <div class="reveal grid grid-cols-2 gap-4">
+        <div class="rounded-2xl p-6 bg-night/60 ring-2 ring-energy/40 hover-card">
+          <div class="text-4xl mb-3">⚡</div>
+          <div class="font-bold text-energy">Électricité</div>
+          <p class="text-xs text-white/60 mt-1">Mise aux normes, tableaux, domotique</p>
+        </div>
+        <div class="rounded-2xl p-6 bg-night/60 ring-2 ring-plumb/50 hover-card mt-8">
+          <div class="text-4xl mb-3">🚰</div>
+          <div class="font-bold text-sky">Plomberie</div>
+          <p class="text-xs text-white/60 mt-1">Sanitaires, fuites, rénovation SdB</p>
+        </div>
+        <div class="rounded-2xl p-6 bg-night/60 ring-2 ring-heat/50 hover-card -mt-8">
+          <div class="text-4xl mb-3">🔥</div>
+          <div class="font-bold text-heat">Chauffage</div>
+          <p class="text-xs text-white/60 mt-1">Pompes à chaleur, chaudières</p>
+        </div>
+        <div class="rounded-2xl p-6 bg-night/60 ring-2 ring-climate/50 hover-card">
+          <div class="text-4xl mb-3">❄️</div>
+          <div class="font-bold text-climate">Climatisation</div>
+          <p class="text-xs text-white/60 mt-1">Split, gainable, confort d'été</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================= -->
+  <!-- 4 PÔLES MÉTIERS (encart dynamique)                            -->
+  <!-- ============================================================= -->
+  <section id="poles" class="py-16 border-y border-white/5 bg-brand/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-10 reveal">
+        <h2 class="text-3xl font-extrabold">Nos 4 pôles d'expertise</h2>
+        <p id="poles-subtitle" class="text-white/60 mt-2 fade-swap">Une équipe polyvalente pour tous vos projets d'habitat.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Carte Électricité -->
+        <a href="#electricite" class="pole-card hover-card group rounded-2xl p-6 bg-night border-t-4 border-energy">
+          <div class="w-14 h-14 rounded-xl grid place-items-center text-3xl mb-4 bg-energy/15 ring-1 ring-energy/40">⚡</div>
+          <h3 class="text-lg font-bold text-energy">Énergie / Électricité</h3>
+          <p class="text-sm text-white/60 mt-2">Installation, rénovation et mise en sécurité de vos réseaux électriques.</p>
+        </a>
+        <!-- Carte Plomberie -->
+        <a href="#plomberie" class="pole-card hover-card group rounded-2xl p-6 bg-night border-t-4 border-plumb">
+          <div class="w-14 h-14 rounded-xl grid place-items-center text-3xl mb-4 bg-plumb/20 ring-1 ring-plumb/50">🚰</div>
+          <h3 class="text-lg font-bold text-sky">Plomberie</h3>
+          <p class="text-sm text-white/60 mt-2">Sanitaire, réseaux d'eau, recherche de fuite et rénovation de salle de bain.</p>
+        </a>
+        <!-- Carte Climatisation -->
+        <a href="#climatisation" class="pole-card hover-card group rounded-2xl p-6 bg-night border-t-4 border-climate">
+          <div class="w-14 h-14 rounded-xl grid place-items-center text-3xl mb-4 bg-climate/15 ring-1 ring-climate/40">❄️</div>
+          <h3 class="text-lg font-bold text-climate">Climatisation</h3>
+          <p class="text-sm text-white/60 mt-2">Systèmes réversibles, split et gainable pour un confort toute l'année.</p>
+        </a>
+        <!-- Carte Chauffage -->
+        <a href="#chauffage" class="pole-card hover-card group rounded-2xl p-6 bg-night border-t-4 border-heat">
+          <div class="w-14 h-14 rounded-xl grid place-items-center text-3xl mb-4 bg-heat/15 ring-1 ring-heat/40">🔥</div>
+          <h3 class="text-lg font-bold text-heat">Chauffage</h3>
+          <p class="text-sm text-white/60 mt-2">Pompes à chaleur, chaudières et solutions de chauffage performantes.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================= -->
+  <!-- CARROUSEL SERVICES (défilement automatique JS)               -->
+  <!-- ============================================================= -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="flex items-end justify-between mb-8 reveal">
+        <div>
+          <h2 class="text-3xl font-extrabold">Nos prestations</h2>
+          <p class="text-white/60 mt-2">Faites glisser ou laissez défiler.</p>
+        </div>
+        <div class="flex gap-2">
+          <button id="carousel-prev" class="w-11 h-11 rounded-full bg-white/10 ring-1 ring-white/15 hover:bg-white/20 transition" aria-label="Précédent">‹</button>
+          <button id="carousel-next" class="w-11 h-11 rounded-full bg-white/10 ring-1 ring-white/15 hover:bg-white/20 transition" aria-label="Suivant">›</button>
+        </div>
+      </div>
+
+      <!-- Piste du carrousel -->
+      <div id="carousel" class="flex gap-5 overflow-x-auto scroll-smooth pb-4 snap-x snap-mandatory no-scrollbar">
+        <!-- Les cartes sont injectées par script.js (et s'adaptent Particuliers/Pro) -->
+      </div>
+
+      <!-- Indicateurs -->
+      <div id="carousel-dots" class="flex justify-center gap-2 mt-4"></div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================= -->
+  <!-- 4 SECTIONS MÉTIER DÉTAILLÉES                                  -->
+  <!-- ============================================================= -->
+
+  <!-- Électricité -->
+  <section id="electricite" class="py-20 scroll-mt-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="reveal order-2 lg:order-1">
+        <span class="inline-block px-3 py-1 rounded-full bg-energy/15 text-energy text-xs font-bold ring-1 ring-energy/40 mb-4">PÔLE ÉNERGIE</span>
+        <h2 class="text-3xl font-extrabold mb-4">⚡ Électricité générale</h2>
+        <p class="metier-desc text-white/70 mb-6" data-metier="electricite">
+          Mise aux normes NF C 15-100, rénovation de tableaux électriques, éclairage, domotique et bornes de recharge. Des installations fiables et sécurisées pour votre quotidien.
+        </p>
+        <ul class="grid sm:grid-cols-2 gap-3 text-sm">
+          <li class="flex gap-2 items-start"><span class="text-energy">✔</span> Tableaux &amp; mise en sécurité</li>
+          <li class="flex gap-2 items-start"><span class="text-energy">✔</span> Éclairage intérieur / extérieur</li>
+          <li class="flex gap-2 items-start"><span class="text-energy">✔</span> Domotique &amp; pilotage</li>
+          <li class="flex gap-2 items-start"><span class="text-energy">✔</span> Bornes de recharge IRVE</li>
+        </ul>
+      </div>
+      <div class="reveal order-1 lg:order-2 rounded-3xl h-72 lg:h-80 bg-gradient-to-br from-energy/30 to-night ring-1 ring-energy/30 grid place-items-center text-8xl hover-card">⚡</div>
+    </div>
+  </section>
+
+  <!-- Plomberie -->
+  <section id="plomberie" class="py-20 scroll-mt-24 bg-brand/20 border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="reveal rounded-3xl h-72 lg:h-80 bg-gradient-to-br from-plumb/40 to-night ring-1 ring-plumb/40 grid place-items-center text-8xl hover-card">🚰</div>
+      <div class="reveal">
+        <span class="inline-block px-3 py-1 rounded-full bg-plumb/20 text-sky text-xs font-bold ring-1 ring-plumb/50 mb-4">PÔLE PLOMBERIE</span>
+        <h2 class="text-3xl font-extrabold mb-4">🚰 Plomberie &amp; sanitaire</h2>
+        <p class="metier-desc text-white/70 mb-6" data-metier="plomberie">
+          Recherche et réparation de fuites, création de réseaux d'eau, installation sanitaire et rénovation complète de salle de bain. Interventions soignées et durables.
+        </p>
+        <ul class="grid sm:grid-cols-2 gap-3 text-sm">
+          <li class="flex gap-2 items-start"><span class="text-sky">✔</span> Recherche de fuite</li>
+          <li class="flex gap-2 items-start"><span class="text-sky">✔</span> Rénovation salle de bain</li>
+          <li class="flex gap-2 items-start"><span class="text-sky">✔</span> Réseaux d'eau &amp; évacuation</li>
+          <li class="flex gap-2 items-start"><span class="text-sky">✔</span> Installation sanitaire</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chauffage -->
+  <section id="chauffage" class="py-20 scroll-mt-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="reveal order-2 lg:order-1">
+        <span class="inline-block px-3 py-1 rounded-full bg-heat/15 text-heat text-xs font-bold ring-1 ring-heat/40 mb-4">PÔLE CHAUFFAGE</span>
+        <h2 class="text-3xl font-extrabold mb-4">🔥 Chauffage performant</h2>
+        <p class="metier-desc text-white/70 mb-6" data-metier="chauffage">
+          Installation et entretien de pompes à chaleur, chaudières et planchers chauffants. Des solutions économes pour réduire vos factures et améliorer votre confort.
+        </p>
+        <ul class="grid sm:grid-cols-2 gap-3 text-sm">
+          <li class="flex gap-2 items-start"><span class="text-heat">✔</span> Pompes à chaleur (PAC)</li>
+          <li class="flex gap-2 items-start"><span class="text-heat">✔</span> Chaudières gaz / condensation</li>
+          <li class="flex gap-2 items-start"><span class="text-heat">✔</span> Plancher chauffant</li>
+          <li class="flex gap-2 items-start"><span class="text-heat">✔</span> Entretien &amp; maintenance</li>
+        </ul>
+      </div>
+      <div class="reveal order-1 lg:order-2 rounded-3xl h-72 lg:h-80 bg-gradient-to-br from-heat/30 to-night ring-1 ring-heat/30 grid place-items-center text-8xl hover-card">🔥</div>
+    </div>
+  </section>
+
+  <!-- Climatisation -->
+  <section id="climatisation" class="py-20 scroll-mt-24 bg-brand/20 border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="reveal rounded-3xl h-72 lg:h-80 bg-gradient-to-br from-climate/30 to-night ring-1 ring-climate/40 grid place-items-center text-8xl hover-card">❄️</div>
+      <div class="reveal">
+        <span class="inline-block px-3 py-1 rounded-full bg-climate/15 text-climate text-xs font-bold ring-1 ring-climate/40 mb-4">PÔLE CLIMATISATION</span>
+        <h2 class="text-3xl font-extrabold mb-4">❄️ Climatisation &amp; confort</h2>
+        <p class="metier-desc text-white/70 mb-6" data-metier="climatisation">
+          Climatiseurs réversibles, systèmes split et gainables discrets. Profitez d'une fraîcheur maîtrisée en été et d'un appoint de chauffage en hiver.
+        </p>
+        <ul class="grid sm:grid-cols-2 gap-3 text-sm">
+          <li class="flex gap-2 items-start"><span class="text-climate">✔</span> Climatiseurs réversibles</li>
+          <li class="flex gap-2 items-start"><span class="text-climate">✔</span> Split &amp; multi-split</li>
+          <li class="flex gap-2 items-start"><span class="text-climate">✔</span> Gainable invisible</li>
+          <li class="flex gap-2 items-start"><span class="text-climate">✔</span> Entretien annuel</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================= -->
+  <!-- BANDEAU PARTENAIRES (marquee infini)                          -->
+  <!-- ============================================================= -->
+  <section class="py-14 border-y border-white/10 bg-night">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 mb-8 text-center reveal">
+      <h2 class="text-2xl font-extrabold">Ils nous font confiance</h2>
+      <p class="text-white/60 mt-2">Collectivités, entreprises et commerces de Touraine.</p>
+    </div>
+
+    <!-- Piste défilante -->
+    <div class="marquee group">
+      <div class="marquee-track">
+        <!-- Série 1 -->
+        <span class="partner-chip">Mairie de Tours</span>
+        <span class="partner-chip">Les Compagnons du Devoir</span>
+        <span class="partner-chip">Mairie de Montbazon</span>
+        <span class="partner-chip">Mairie de St Pierre</span>
+        <span class="partner-chip">Aéroport de Tours</span>
+        <span class="partner-chip">Pharmacie Principale Tours</span>
+        <span class="partner-chip">Académie de la Coiffure (Brigitte Sicard)</span>
+        <span class="partner-chip">Eurofeu</span>
+        <span class="partner-chip">Euromaster</span>
+        <span class="partner-chip">JouéClub</span>
+        <span class="partner-chip">Brosset Immobilier</span>
+        <span class="partner-chip">Caisse d'Épargne</span>
+        <span class="partner-chip">CECOFIAC</span>
+        <span class="partner-chip">La Chocolatière</span>
+        <span class="partner-chip">Restaurant ACTE21</span>
+        <span class="partner-chip">SCHOEN</span>
+        <span class="partner-chip">LIGERIS</span>
+        <!-- Série 2 (duplicata pour boucle continue) -->
+        <span class="partner-chip" aria-hidden="true">Mairie de Tours</span>
+        <span class="partner-chip" aria-hidden="true">Les Compagnons du Devoir</span>
+        <span class="partner-chip" aria-hidden="true">Mairie de Montbazon</span>
+        <span class="partner-chip" aria-hidden="true">Mairie de St Pierre</span>
+        <span class="partner-chip" aria-hidden="true">Aéroport de Tours</span>
+        <span class="partner-chip" aria-hidden="true">Pharmacie Principale Tours</span>
+        <span class="partner-chip" aria-hidden="true">Académie de la Coiffure (Brigitte Sicard)</span>
+        <span class="partner-chip" aria-hidden="true">Eurofeu</span>
+        <span class="partner-chip" aria-hidden="true">Euromaster</span>
+        <span class="partner-chip" aria-hidden="true">JouéClub</span>
+        <span class="partner-chip" aria-hidden="true">Brosset Immobilier</span>
+        <span class="partner-chip" aria-hidden="true">Caisse d'Épargne</span>
+        <span class="partner-chip" aria-hidden="true">CECOFIAC</span>
+        <span class="partner-chip" aria-hidden="true">La Chocolatière</span>
+        <span class="partner-chip" aria-hidden="true">Restaurant ACTE21</span>
+        <span class="partner-chip" aria-hidden="true">SCHOEN</span>
+        <span class="partner-chip" aria-hidden="true">LIGERIS</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================= -->
+  <!-- ENTREPRISE / À PROPOS                                         -->
+  <!-- ============================================================= -->
+  <section id="entreprise" class="py-20 scroll-mt-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <span class="inline-block px-3 py-1 rounded-full bg-sky/15 text-sky text-xs font-bold ring-1 ring-sky/40 mb-4">L'ENTREPRISE</span>
+        <h2 class="text-3xl font-extrabold mb-4">15 ans au service de la Touraine</h2>
+        <p class="text-white/70 mb-4">
+          Basée à <strong class="text-white">Chambray-lès-Tours</strong>, DMS System accompagne particuliers et
+          professionnels sur l'ensemble de l'<strong class="text-white">Indre-et-Loire (37)</strong> et du
+          <strong class="text-white">Loir-et-Cher (41)</strong>. Notre force : réunir 4 métiers complémentaires
+          sous une seule enseigne, pour une coordination sans faille de vos projets.
+        </p>
+        <p class="text-white/70">
+          De la simple intervention de dépannage à la rénovation énergétique complète, nous mettons notre
+          savoir-faire artisanal au service de votre confort et de vos économies d'énergie.
+        </p>
+        <div class="flex flex-wrap gap-4 mt-8">
+          <div class="rounded-xl px-5 py-4 bg-white/5 ring-1 ring-white/10"><div class="text-2xl font-extrabold text-sky">📍 37 &amp; 41</div><div class="text-xs text-white/60">Zone d'intervention</div></div>
+          <div class="rounded-xl px-5 py-4 bg-white/5 ring-1 ring-white/10"><div class="text-2xl font-extrabold text-sky">🏆 15 ans</div><div class="text-xs text-white/60">D'expérience terrain</div></div>
+          <div class="rounded-xl px-5 py-4 bg-white/5 ring-1 ring-white/10"><div class="text-2xl font-extrabold text-sky">🤝 4 pôles</div><div class="text-xs text-white/60">Un seul contact</div></div>
+        </div>
+      </div>
+      <div class="reveal rounded-3xl h-80 bg-gradient-to-br from-brand to-night ring-1 ring-white/10 grid place-items-center text-7xl hover-card">🏗️</div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================= -->
+  <!-- DÉPANNAGE URGENT (bandeau réactif)                            -->
+  <!-- ============================================================= -->
+  <section id="depannage" class="py-14 scroll-mt-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="rounded-3xl p-8 lg:p-10 bg-gradient-to-r from-heat via-heat/80 to-brand ring-1 ring-heat/40 flex flex-col lg:flex-row items-center justify-between gap-6 hover-card">
+        <div class="flex items-center gap-5">
+          <div class="text-5xl animate-pulse-ring">🚨</div>
+          <div>
+            <h2 class="text-2xl font-extrabold">Dépannage urgent — intervention sous 48h</h2>
+            <p class="text-white/80 mt-1">Fuite, panne électrique, chauffage en berne ? Nos équipes réagissent vite.</p>
+          </div>
+        </div>
+        <a href="tel:0247480518" class="shrink-0 px-6 py-4 rounded-xl bg-white text-heat font-extrabold text-lg shadow-lg hover:-translate-y-0.5 transition">
+          📞 02 47 48 05 18
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================= -->
+  <!-- AIDES & FINANCEMENTS                                          -->
+  <!-- ============================================================= -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12 reveal">
+        <h2 class="text-3xl font-extrabold">Aides &amp; financements</h2>
+        <p class="text-white/60 mt-2">Nous vous aidons à réduire le coût de vos travaux de rénovation énergétique.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="hover-card rounded-2xl p-6 bg-night ring-1 ring-white/10 border-t-4 border-energy">
+          <div class="text-3xl mb-3">🏡</div>
+          <h3 class="font-bold text-energy">MaPrimeRénov'</h3>
+          <p class="text-sm text-white/60 mt-2">La prime de l'État pour financer vos travaux d'économie d'énergie.</p>
+        </div>
+        <div class="hover-card rounded-2xl p-6 bg-night ring-1 ring-white/10 border-t-4 border-climate">
+          <div class="text-3xl mb-3">📉</div>
+          <h3 class="font-bold text-climate">TVA réduite 5,5 %</h3>
+          <p class="text-sm text-white/60 mt-2">Taux réduit appliqué sur les travaux d'amélioration énergétique éligibles.</p>
+        </div>
+        <div class="hover-card rounded-2xl p-6 bg-night ring-1 ring-white/10 border-t-4 border-plumb">
+          <div class="text-3xl mb-3">♻️</div>
+          <h3 class="font-bold text-sky">Prime CEE</h3>
+          <p class="text-sm text-white/60 mt-2">Certificats d'Économies d'Énergie versés par les fournisseurs d'énergie.</p>
+        </div>
+        <div class="hover-card rounded-2xl p-6 bg-night ring-1 ring-white/10 border-t-4 border-heat">
+          <div class="text-3xl mb-3">🏦</div>
+          <h3 class="font-bold text-heat">Éco-PTZ</h3>
+          <p class="text-sm text-white/60 mt-2">Éco-prêt à taux zéro pour financer vos travaux sans avancer de trésorerie.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================= -->
+  <!-- RÉALISATIONS                                                  -->
+  <!-- ============================================================= -->
+  <section id="realisations" class="py-20 scroll-mt-24 bg-brand/20 border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12 reveal">
+        <h2 class="text-3xl font-extrabold">Nos réalisations</h2>
+        <p class="text-white/60 mt-2">Un aperçu de nos derniers chantiers en Touraine.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Chaque carte : effet zoom au survol -->
+        <div class="group relative overflow-hidden rounded-2xl h-64 ring-1 ring-white/10 cursor-pointer">
+          <div class="w-full h-full bg-gradient-to-br from-energy/40 to-night grid place-items-center text-6xl transition duration-500 group-hover:scale-105">⚡</div>
+          <div class="absolute inset-0 bg-gradient-to-t from-night via-night/40 to-transparent opacity-90 flex items-end p-5">
+            <div><div class="font-bold">Rénovation tableau électrique</div><div class="text-xs text-white/60">Tours (37)</div></div>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-2xl h-64 ring-1 ring-white/10 cursor-pointer">
+          <div class="w-full h-full bg-gradient-to-br from-plumb/50 to-night grid place-items-center text-6xl transition duration-500 group-hover:scale-105">🚿</div>
+          <div class="absolute inset-0 bg-gradient-to-t from-night via-night/40 to-transparent opacity-90 flex items-end p-5">
+            <div><div class="font-bold">Salle de bain clé en main</div><div class="text-xs text-white/60">Chambray-lès-Tours (37)</div></div>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-2xl h-64 ring-1 ring-white/10 cursor-pointer">
+          <div class="w-full h-full bg-gradient-to-br from-heat/40 to-night grid place-items-center text-6xl transition duration-500 group-hover:scale-105">🔥</div>
+          <div class="absolute inset-0 bg-gradient-to-t from-night via-night/40 to-transparent opacity-90 flex items-end p-5">
+            <div><div class="font-bold">Installation pompe à chaleur</div><div class="text-xs text-white/60">Joué-lès-Tours (37)</div></div>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-2xl h-64 ring-1 ring-white/10 cursor-pointer">
+          <div class="w-full h-full bg-gradient-to-br from-climate/40 to-night grid place-items-center text-6xl transition duration-500 group-hover:scale-105">❄️</div>
+          <div class="absolute inset-0 bg-gradient-to-t from-night via-night/40 to-transparent opacity-90 flex items-end p-5">
+            <div><div class="font-bold">Climatisation gainable</div><div class="text-xs text-white/60">Montbazon (37)</div></div>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-2xl h-64 ring-1 ring-white/10 cursor-pointer">
+          <div class="w-full h-full bg-gradient-to-br from-brand to-night grid place-items-center text-6xl transition duration-500 group-hover:scale-105">🏢</div>
+          <div class="absolute inset-0 bg-gradient-to-t from-night via-night/40 to-transparent opacity-90 flex items-end p-5">
+            <div><div class="font-bold">Maintenance copropriété</div><div class="text-xs text-white/60">Saint-Cyr-sur-Loire (37)</div></div>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-2xl h-64 ring-1 ring-white/10 cursor-pointer">
+          <div class="w-full h-full bg-gradient-to-br from-sky/40 to-night grid place-items-center text-6xl transition duration-500 group-hover:scale-105">💡</div>
+          <div class="absolute inset-0 bg-gradient-to-t from-night via-night/40 to-transparent opacity-90 flex items-end p-5">
+            <div><div class="font-bold">Éclairage &amp; domotique</div><div class="text-xs text-white/60">Amboise (37)</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================= -->
+  <!-- AVIS CLIENTS                                                  -->
+  <!-- ============================================================= -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12 reveal">
+        <h2 class="text-3xl font-extrabold">Avis clients</h2>
+        <p class="text-white/60 mt-2">La satisfaction de nos clients est notre meilleure publicité.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <figure class="hover-card rounded-2xl p-6 bg-night ring-1 ring-white/10">
+          <div class="text-energy text-lg mb-3">★★★★★</div>
+          <blockquote class="text-white/80 text-sm">« Intervention rapide pour une fuite. Travail propre et équipe très pro. Je recommande vivement ! »</blockquote>
+          <figcaption class="mt-4 text-sm font-semibold">Sophie L. <span class="text-white/50 font-normal">— Tours</span></figcaption>
+        </figure>
+        <figure class="hover-card rounded-2xl p-6 bg-night ring-1 ring-white/10">
+          <div class="text-energy text-lg mb-3">★★★★★</div>
+          <blockquote class="text-white/80 text-sm">« Installation d'une pompe à chaleur impeccable. Bon conseil sur les aides financières. »</blockquote>
+          <figcaption class="mt-4 text-sm font-semibold">Marc D. <span class="text-white/50 font-normal">— Chambray-lès-Tours</span></figcaption>
+        </figure>
+        <figure class="hover-card rounded-2xl p-6 bg-night ring-1 ring-white/10">
+          <div class="text-energy text-lg mb-3">★★★★★</div>
+          <blockquote class="text-white/80 text-sm">« Un seul interlocuteur pour l'élec et la clim de notre copropriété. Très pratique et réactif. »</blockquote>
+          <figcaption class="mt-4 text-sm font-semibold">Syndic Résidence Belvédère <span class="text-white/50 font-normal">— Joué-lès-Tours</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================= -->
+  <!-- FAQ (accordéons)                                              -->
+  <!-- ============================================================= -->
+  <section class="py-20 bg-brand/20 border-y border-white/5">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12 reveal">
+        <h2 class="text-3xl font-extrabold">Questions fréquentes</h2>
+        <p class="text-white/60 mt-2">Tout ce que vous devez savoir avant de nous contacter.</p>
+      </div>
+
+      <div class="space-y-4" id="faq">
+        <div class="faq-item rounded-2xl bg-night ring-1 ring-white/10 overflow-hidden">
+          <button class="faq-q w-full flex items-center justify-between gap-4 p-5 text-left font-semibold">
+            <span>Intervenez-vous en urgence ?</span>
+            <span class="faq-icon text-sky text-2xl transition-transform">+</span>
+          </button>
+          <div class="faq-a px-5 text-white/70 text-sm"><p class="pb-5">Oui, nous proposons un service de dépannage avec une intervention sous 48h sur tout le département de l'Indre-et-Loire (37) et une partie du Loir-et-Cher (41).</p></div>
+        </div>
+        <div class="faq-item rounded-2xl bg-night ring-1 ring-white/10 overflow-hidden">
+          <button class="faq-q w-full flex items-center justify-between gap-4 p-5 text-left font-semibold">
+            <span>Le devis est-il vraiment gratuit ?</span>
+            <span class="faq-icon text-sky text-2xl transition-transform">+</span>
+          </button>
+          <div class="faq-a px-5 text-white/70 text-sm"><p class="pb-5">Absolument. Nous établissons un devis détaillé et sans engagement pour tous vos projets, du simple dépannage à la rénovation complète.</p></div>
+        </div>
+        <div class="faq-item rounded-2xl bg-night ring-1 ring-white/10 overflow-hidden">
+          <button class="faq-q w-full flex items-center justify-between gap-4 p-5 text-left font-semibold">
+            <span>Pouvez-vous m'aider avec les aides financières ?</span>
+            <span class="faq-icon text-sky text-2xl transition-transform">+</span>
+          </button>
+          <div class="faq-a px-5 text-white/70 text-sm"><p class="pb-5">Oui, nous vous accompagnons dans le montage de vos dossiers MaPrimeRénov', CEE, Éco-PTZ et vous faisons bénéficier de la TVA réduite lorsque vous y êtes éligible.</p></div>
+        </div>
+        <div class="faq-item rounded-2xl bg-night ring-1 ring-white/10 overflow-hidden">
+          <button class="faq-q w-full flex items-center justify-between gap-4 p-5 text-left font-semibold">
+            <span>Travaillez-vous pour les professionnels et copropriétés ?</span>
+            <span class="faq-icon text-sky text-2xl transition-transform">+</span>
+          </button>
+          <div class="faq-a px-5 text-white/70 text-sm"><p class="pb-5">Oui. Nous proposons des contrats de maintenance et un accompagnement dédié aux entreprises, syndics et copropriétés. Activez le mode « Professionnels » en haut de page pour découvrir notre offre.</p></div>
+        </div>
+        <div class="faq-item rounded-2xl bg-night ring-1 ring-white/10 overflow-hidden">
+          <button class="faq-q w-full flex items-center justify-between gap-4 p-5 text-left font-semibold">
+            <span>Êtes-vous certifiés RGE ?</span>
+            <span class="faq-icon text-sky text-2xl transition-transform">+</span>
+          </button>
+          <div class="faq-a px-5 text-white/70 text-sm"><p class="pb-5">Nos qualifications RGE &amp; Qualipac sont en cours d'obtention, prévues pour septembre 2026, afin de vous garantir un accès optimal aux aides de l'État.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================= -->
+  <!-- CONTACT (formulaire + carte)                                 -->
+  <!-- ============================================================= -->
+  <section id="contact" class="py-20 scroll-mt-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-10">
+      <!-- Formulaire -->
+      <div class="reveal">
+        <h2 class="text-3xl font-extrabold mb-2">Contactez-nous</h2>
+        <p class="text-white/60 mb-8">Une question, un projet ? Réponse rapide garantie.</p>
+        <form id="contact-form" class="space-y-4">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <input required type="text" placeholder="Nom &amp; prénom" class="form-input" />
+            <input required type="tel" placeholder="Téléphone" class="form-input" />
+          </div>
+          <input required type="email" placeholder="Email" class="form-input" />
+          <select class="form-input">
+            <option value="">Sujet de votre demande…</option>
+            <option>Électricité</option>
+            <option>Plomberie</option>
+            <option>Chauffage</option>
+            <option>Climatisation</option>
+            <option>Dépannage urgent</option>
+            <option>Contrat de maintenance (Pro)</option>
+          </select>
+          <textarea required rows="4" placeholder="Votre message" class="form-input resize-none"></textarea>
+          <button type="submit" class="w-full py-3.5 rounded-xl bg-energy text-night font-bold shadow-lg shadow-energy/40 hover:brightness-105 transition">
+            Envoyer ma demande
+          </button>
+          <p id="contact-feedback" class="text-sm text-climate hidden">✅ Merci ! Votre message a bien été envoyé. Nous vous recontactons rapidement.</p>
+        </form>
+      </div>
+
+      <!-- Coordonnées + carte -->
+      <div class="reveal space-y-6">
+        <div class="rounded-2xl p-6 bg-night ring-1 ring-white/10 space-y-4">
+          <div class="flex items-start gap-3"><span class="text-2xl">📍</span><div><div class="font-semibold">Adresse</div><div class="text-white/60 text-sm">Chambray-lès-Tours (37170)</div></div></div>
+          <div class="flex items-start gap-3"><span class="text-2xl">📞</span><div><div class="font-semibold">Téléphone</div><a href="tel:0247480518" class="text-sky text-sm hover:underline">02 47 48 05 18</a></div></div>
+          <div class="flex items-start gap-3"><span class="text-2xl">✉️</span><div><div class="font-semibold">Email</div><a href="mailto:contact@dms-system.fr" class="text-sky text-sm hover:underline">contact@dms-system.fr</a></div></div>
+          <div class="flex items-start gap-3"><span class="text-2xl">🕒</span><div><div class="font-semibold">Horaires</div><div class="text-white/60 text-sm">Lun – Ven : 8h – 18h</div></div></div>
+        </div>
+        <!-- Carte (OpenStreetMap, sans clé API) -->
+        <div class="rounded-2xl overflow-hidden ring-1 ring-white/10 h-64">
+          <iframe
+            title="Carte DMS System — Chambray-lès-Tours"
+            class="w-full h-full grayscale-[.2]"
+            loading="lazy"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=0.68%2C47.31%2C0.75%2C47.35&layer=mapnik&marker=47.33%2C0.71">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================= -->
+  <!-- CERTIFICATIONS & ENGAGEMENTS                                  -->
+  <!-- ============================================================= -->
+  <section class="py-14 bg-gradient-to-r from-brand to-night border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="rounded-3xl p-8 bg-white/5 ring-1 ring-white/10 flex flex-col lg:flex-row items-center justify-between gap-6 reveal">
+        <div class="flex items-center gap-5">
+          <div class="text-5xl">🛡️</div>
+          <div>
+            <h2 class="text-2xl font-extrabold">Engagements &amp; Qualité</h2>
+            <p class="text-white/70 mt-1">Un travail soigné, garanti et conforme aux normes en vigueur.</p>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-3 justify-center">
+          <span class="px-4 py-2 rounded-full bg-energy/15 text-energy ring-1 ring-energy/40 text-sm font-semibold">Qualifications RGE &amp; Qualipac à venir — Septembre 2026</span>
+          <span class="px-4 py-2 rounded-full bg-white/10 ring-1 ring-white/15 text-sm font-semibold">Devis gratuit</span>
+          <span class="px-4 py-2 rounded-full bg-white/10 ring-1 ring-white/15 text-sm font-semibold">Garantie décennale</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================= -->
+  <!-- FOOTER (SEO local)                                            -->
+  <!-- ============================================================= -->
+  <footer class="bg-night border-t border-white/10 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <!-- Marque -->
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand to-plumb grid place-items-center font-extrabold ring-1 ring-sky/30">DMS</div>
+            <div class="font-extrabold text-lg">DMS <span class="text-sky">System</span></div>
+          </div>
+          <p class="text-white/60 text-sm">Électricité, plomberie, chauffage et climatisation en Touraine. Un seul interlocuteur pour tout votre habitat.</p>
+          <a href="tel:0247480518" class="inline-block mt-4 px-4 py-2 rounded-lg bg-heat font-semibold text-sm">📞 02 47 48 05 18</a>
+        </div>
+
+        <!-- Nos métiers -->
+        <div>
+          <h3 class="font-bold mb-4 text-sky">Nos métiers</h3>
+          <ul class="space-y-2 text-sm text-white/60">
+            <li><a href="#electricite" class="hover:text-white transition">Électricité générale</a></li>
+            <li><a href="#plomberie" class="hover:text-white transition">Plomberie &amp; sanitaire</a></li>
+            <li><a href="#chauffage" class="hover:text-white transition">Chauffage &amp; PAC</a></li>
+            <li><a href="#climatisation" class="hover:text-white transition">Climatisation</a></li>
+            <li><a href="#depannage" class="hover:text-white transition">Dépannage urgent 48h</a></li>
+          </ul>
+        </div>
+
+        <!-- Liens -->
+        <div>
+          <h3 class="font-bold mb-4 text-sky">Informations</h3>
+          <ul class="space-y-2 text-sm text-white/60">
+            <li><a href="#entreprise" class="hover:text-white transition">L'entreprise</a></li>
+            <li><a href="#realisations" class="hover:text-white transition">Réalisations</a></li>
+            <li><a href="#contact" class="hover:text-white transition">Contact &amp; devis</a></li>
+            <li><a href="#" class="hover:text-white transition">Aides &amp; financements</a></li>
+            <li><a href="#" class="hover:text-white transition">Mentions légales</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="font-bold mb-4 text-sky">Nous trouver</h3>
+          <ul class="space-y-2 text-sm text-white/60">
+            <li>📍 Chambray-lès-Tours (37170)</li>
+            <li>✉️ contact@dms-system.fr</li>
+            <li>🕒 Lun – Ven : 8h – 18h</li>
+            <li>🌍 Interventions 37 &amp; 41</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Grille SEO : zones d'intervention -->
+      <div class="border-t border-white/10 pt-8">
+        <h3 class="font-bold mb-4 text-sm uppercase tracking-wide text-white/70">Zones d'intervention en Indre-et-Loire (37) &amp; Loir-et-Cher (41)</h3>
+        <div class="flex flex-wrap gap-x-4 gap-y-2 text-xs text-white/45">
+          <span>Tours</span><span>Chambray-lès-Tours</span><span>Saint-Cyr-sur-Loire</span><span>Joué-lès-Tours</span>
+          <span>Montbazon</span><span>Amboise</span><span>Saint-Pierre-des-Corps</span><span>La Riche</span>
+          <span>Fondettes</span><span>Ballan-Miré</span><span>Saint-Avertin</span><span>Notre-Dame-d'Oé</span>
+          <span>Montlouis-sur-Loire</span><span>Vouvray</span><span>Luynes</span><span>Veretz</span>
+          <span>Esvres</span><span>Monts</span><span>Blois</span><span>Vendôme</span>
+          <span>Romorantin-Lanthenay</span><span>Contres</span><span>Mer</span><span>Salbris</span>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10 mt-8 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/40">
+        <span>© <span id="year"></span> DMS System — Tous droits réservés.</span>
+        <span>Électricité · Plomberie · Chauffage · Climatisation en Touraine</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ============================================================= -->
+  <!-- MODALE : DEVIS GRATUIT                                        -->
+  <!-- ============================================================= -->
+  <div id="quote-modal" class="fixed inset-0 z-[60] hidden items-center justify-center p-4">
+    <!-- Overlay -->
+    <div class="modal-overlay absolute inset-0 bg-night/80 backdrop-blur-sm"></div>
+    <!-- Fenêtre -->
+    <div class="modal-box relative w-full max-w-lg rounded-3xl bg-brand ring-1 ring-white/15 shadow-2xl p-6 sm:p-8 max-h-[90vh] overflow-y-auto">
+      <button data-close-quote class="absolute top-4 right-4 w-9 h-9 grid place-items-center rounded-full bg-white/10 hover:bg-white/20 transition" aria-label="Fermer">✕</button>
+      <div class="text-center mb-6">
+        <div class="w-14 h-14 mx-auto rounded-2xl bg-energy grid place-items-center text-2xl mb-4">📝</div>
+        <h3 class="text-2xl font-extrabold">Demande de devis gratuit</h3>
+        <p class="text-white/60 text-sm mt-1">Réponse sous 24 à 48h ouvrées.</p>
+      </div>
+      <form id="quote-form" class="space-y-4">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <input required type="text" placeholder="Nom &amp; prénom" class="form-input" />
+          <input required type="tel" placeholder="Téléphone" class="form-input" />
+        </div>
+        <input required type="email" placeholder="Email" class="form-input" />
+        <div class="grid sm:grid-cols-2 gap-4">
+          <select required class="form-input">
+            <option value="">Prestation…</option>
+            <option>Électricité</option>
+            <option>Plomberie</option>
+            <option>Chauffage</option>
+            <option>Climatisation</option>
+            <option>Rénovation énergétique</option>
+            <option>Contrat de maintenance (Pro)</option>
+          </select>
+          <input type="text" placeholder="Ville (37 / 41)" class="form-input" />
+        </div>
+        <textarea required rows="3" placeholder="Décrivez votre projet…" class="form-input resize-none"></textarea>
+        <button type="submit" class="w-full py-3.5 rounded-xl bg-energy text-night font-bold shadow-lg shadow-energy/40 hover:brightness-105 transition">
+          Recevoir mon devis
+        </button>
+        <p id="quote-feedback" class="text-sm text-climate text-center hidden">✅ Demande envoyée ! Nous revenons vers vous très vite.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Logique interactive -->
+  <script src="script.js"></script>
+</body>
+</html>

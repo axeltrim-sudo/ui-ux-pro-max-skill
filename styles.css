@@ -1,0 +1,269 @@
+/* ============================================================================
+   DMS System — Styles complémentaires & animations personnalisées
+   (Tailwind gère la mise en page ; ce fichier ajoute animations & micro-effets)
+   ========================================================================== */
+
+/* -------------------- Base & confort de lecture -------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* Léger dégradé de fond pour donner de la profondeur au bleu nuit */
+  background-image:
+    radial-gradient(1200px 600px at 80% -10%, rgba(55, 161, 226, 0.10), transparent 60%),
+    radial-gradient(1000px 500px at -10% 20%, rgba(11, 77, 162, 0.12), transparent 55%);
+  background-attachment: fixed;
+}
+
+/* Masquer la barre de défilement du carrousel (esthétique) */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* ============================================================================
+   1. CARROUSEL INFINI DES PARTENAIRES (marquee)
+   ========================================================================== */
+.marquee {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /* Fondu progressif sur les bords gauche/droite */
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+          mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.marquee-track {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  /* Défilement horizontal continu et fluide */
+  animation: marquee-scroll 45s linear infinite;
+}
+
+/* Pause du défilement au survol */
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  /* -50% car la piste contient 2 séries identiques : boucle sans saut visible */
+  to   { transform: translateX(-50%); }
+}
+
+/* Puce partenaire */
+.partner-chip {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(129, 187, 235, 0.25); /* sky */
+  transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+}
+.partner-chip:hover {
+  transform: translateY(-3px);
+  background: rgba(129, 187, 235, 0.15);
+  border-color: rgba(129, 187, 235, 0.6);
+}
+
+
+/* ============================================================================
+   2. EFFET DE SURVOL DES CARTES (élévation + ombre colorée + brillance)
+   ========================================================================== */
+.hover-card {
+  position: relative;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.35s ease,
+              border-color 0.35s ease;
+  will-change: transform;
+}
+.hover-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 18px 40px -12px rgba(11, 77, 162, 0.45),   /* ombre bleu royal */
+    0 0 0 1px rgba(129, 187, 235, 0.25);          /* liseré ciel */
+}
+
+/* Reflet lumineux qui traverse la carte au survol */
+.hover-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(120deg, transparent 30%, rgba(255, 255, 255, 0.10) 50%, transparent 70%);
+  transform: translateX(-120%);
+  transition: transform 0.7s ease;
+  pointer-events: none;
+}
+.hover-card:hover::after {
+  transform: translateX(120%);
+}
+
+
+/* ============================================================================
+   3. BOUTON "DEVIS GRATUIT" — effet de pulsation
+   ========================================================================== */
+.btn-pulse {
+  position: relative;
+  animation: btn-pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes btn-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(225, 178, 37, 0.55); }
+  50%      { box-shadow: 0 0 0 12px rgba(225, 178, 37, 0); }
+}
+
+/* Petite pulsation pour l'icône d'urgence / alerte */
+.animate-pulse-ring {
+  display: inline-block;
+  animation: ring-shake 2s ease-in-out infinite;
+}
+@keyframes ring-shake {
+  0%, 100%   { transform: rotate(0); }
+  10%, 30%   { transform: rotate(-12deg); }
+  20%, 40%   { transform: rotate(12deg); }
+  50%        { transform: rotate(0); }
+}
+
+
+/* ============================================================================
+   4. TRANSITIONS DYNAMIQUES (switch Particuliers / Professionnels)
+   ========================================================================== */
+/* Fondu appliqué aux textes qui changent selon l'audience */
+.fade-swap {
+  transition: opacity 0.35s ease;
+}
+.fade-out {
+  opacity: 0;
+}
+
+
+/* ============================================================================
+   5. RÉVÉLATION AU SCROLL (IntersectionObserver ajoute .is-visible)
+   ========================================================================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* ============================================================================
+   6. FAQ — accordéons animés
+   ========================================================================== */
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+.faq-item.open .faq-a {
+  max-height: 320px; /* suffisant pour les réponses */
+}
+.faq-item.open .faq-icon {
+  transform: rotate(45deg); /* le "+" devient un "×" */
+}
+
+
+/* ============================================================================
+   7. CHAMPS DE FORMULAIRE
+   ========================================================================== */
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 0.9rem;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+.form-input:focus {
+  outline: none;
+  border-color: #81BBEB; /* sky */
+  background: rgba(255, 255, 255, 0.10);
+  box-shadow: 0 0 0 3px rgba(129, 187, 235, 0.25);
+}
+/* Options du select lisibles sur fond sombre */
+.form-input option {
+  background: #0A1E3F;
+  color: #fff;
+}
+
+
+/* ============================================================================
+   8. MODALE (devis) — animations d'ouverture
+   ========================================================================== */
+#quote-modal.is-open {
+  display: flex;
+}
+.modal-overlay {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.modal-box {
+  opacity: 0;
+  transform: translateY(20px) scale(0.97);
+  transition: opacity 0.35s ease, transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+#quote-modal.is-open .modal-overlay { opacity: 1; }
+#quote-modal.is-open .modal-box     { opacity: 1; transform: translateY(0) scale(1); }
+
+
+/* ============================================================================
+   9. CARROUSEL SERVICES — dimension des cartes & indicateurs
+   ========================================================================== */
+.service-card {
+  flex: 0 0 85%;
+  scroll-snap-align: start;
+}
+@media (min-width: 640px) { .service-card { flex-basis: 45%; } }
+@media (min-width: 1024px) { .service-card { flex-basis: 31%; } }
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.25);
+  transition: width 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+.carousel-dot.active {
+  width: 26px;
+  background: #81BBEB; /* sky */
+}
+
+
+/* ============================================================================
+   10. ACCESSIBILITÉ — respect de prefers-reduced-motion
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track,
+  .btn-pulse,
+  .animate-pulse-ring {
+    animation: none !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  html { scroll-behavior: auto; }
+}
