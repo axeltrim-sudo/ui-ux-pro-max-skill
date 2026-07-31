@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI/UX Pro Max — Premium Design System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar-content">
+      <div class="navbar-brand">
+        <h2 class="text-xl font-bold text-primary">UI/UX Pro Max</h2>
+        <span class="text-xs text-muted ml-2">Design Intelligence Toolkit</span>
+      </div>
+      <div class="navbar-menu">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#components" class="nav-link">Components</a>
+        <a href="#tokens" class="nav-link">Tokens</a>
+        <button class="btn btn-primary btn-sm">Get Started</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1 class="display-text">Transform Your Design Process</h1>
+      <p class="hero-subtitle">Enterprise-grade design tokens, typography scales, color systems, and UX principles for high-end PME interfaces.</p>
+      <div class="hero-buttons">
+        <button class="btn btn-primary">Launch Dashboard</button>
+        <button class="btn btn-outline">View Documentation</button>
+      </div>
+      <p class="text-xs text-muted mt-lg">✓ 194 color palettes · 60+ font pairings · WCAG 3:1 contrast guaranteed</p>
+    </div>
+  </div>
+</section>
+
+<!-- Features Grid Section -->
+<section id="features" class="section-featured">
+  <div class="container">
+    <h2 class="section-title">Why UI/UX Pro Max</h2>
+    <div class="feature-grid">
+
+      <div class="feature-card">
+        <div class="feature-icon">🎨</div>
+        <h3 class="text-lg font-semibold mb-2">Design Tokens</h3>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          Pre-built color palettes, typography scales, spacing tokens, and border radius systems. Never hardcode values again.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">✍️</div>
+        <h3 class="text-lg font-semibold mb-2">Typography Mastery</h3>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          60+ professional font pairings from luxury to startup. Modular scale (1.125 ratio) ensures perfect hierarchy.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🎯</div>
+        <h3 class="text-lg font-semibold mb-2">Accessibility First</h3>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          WCAG 2.1 AA compliant. 4.5:1 text contrast, 44px touch targets on mobile, keyboard navigation everywhere.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3 class="text-lg font-semibold mb-2">Performance Ready</h3>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          Micro-interactions under 300ms, responsive breakpoints, lazy-loaded images. No bloat, all substance.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🎯</div>
+        <h3 class="text-lg font-semibold mb-2">No AI Gimmicks</h3>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          Pure design principles. Clear hierarchy, consistent patterns, visual clarity. Human-centered design.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">📱</div>
+        <h3 class="text-lg font-semibold mb-2">Mobile First</h3>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          Responsive breakpoints (sm/md/lg/xl). Safe area respecting. Touch-friendly by design, not retrofitted.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Components Section -->
+<section id="components" class="section">
+  <div class="container">
+    <h2 class="section-title">UI Components</h2>
+
+    <!-- Buttons Subsection -->
+    <div class="subsection">
+      <h3 class="text-2xl font-semibold mb-6 text-gray-900">Button Variants</h3>
+      <div class="component-demo">
+        <div class="demo-group">
+          <button class="btn btn-primary">Primary Action</button>
+          <button class="btn btn-secondary">Secondary Action</button>
+          <button class="btn btn-outline">Outline Action</button>
+        </div>
+        <div class="demo-group">
+          <button class="btn btn-primary btn-sm">Small Primary</button>
+          <button class="btn btn-primary btn-lg">Large Primary</button>
+          <button class="btn btn-primary" disabled>Disabled State</button>
+        </div>
+      </div>
+      <pre class="code-block"><code>&lt;button class="btn btn-primary"&gt;Primary Action&lt;/button&gt;
+&lt;button class="btn btn-secondary"&gt;Secondary Action&lt;/button&gt;
+&lt;button class="btn btn-outline"&gt;Outline Action&lt;/button&gt;</code></pre>
+    </div>
+
+    <!-- Forms Subsection -->
+    <div class="subsection">
+      <h3 class="text-2xl font-semibold mb-6 text-gray-900">Form Controls</h3>
+      <div class="form-demo">
+        <div class="form-group">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" id="email" class="form-input" placeholder="you@example.com" />
+          <span class="form-hint">We never share your email</span>
+        </div>
+
+        <div class="form-group">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" id="password" class="form-input" placeholder="••••••••" />
+          <span class="form-hint">Minimum 8 characters</span>
+        </div>
+
+        <div class="form-group">
+          <label for="message" class="form-label">Message</label>
+          <textarea id="message" class="form-input" rows="4" placeholder="Your message here..."></textarea>
+        </div>
+
+        <button class="btn btn-primary w-full">Submit Form</button>
+      </div>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="subsection">
+      <h3 class="text-2xl font-semibold mb-6 text-gray-900">Card Components</h3>
+      <div class="card-grid">
+
+        <div class="card">
+          <div class="card-header">
+            <h4 class="text-lg font-semibold text-gray-900">Standard Card</h4>
+          </div>
+          <div class="card-body">
+            <p class="text-sm text-gray-600 leading-relaxed mb-4">
+              This is a standard card with proper padding, border, and shadow. Perfect for displaying content with hierarchy.
+            </p>
+            <button class="btn btn-primary btn-sm">Learn More</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h4 class="text-lg font-semibold text-gray-900">Success State</h4>
+          </div>
+          <div class="card-body">
+            <div class="alert alert-success">
+              <span class="alert-icon">✓</span>
+              <div>
+                <p class="text-sm font-medium text-green-900">Success!</p>
+                <p class="text-xs text-green-700 mt-1">Your changes have been saved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h4 class="text-lg font-semibold text-gray-900">Error State</h4>
+          </div>
+          <div class="card-body">
+            <div class="alert alert-error">
+              <span class="alert-icon">⚠</span>
+              <div>
+                <p class="text-sm font-medium text-red-900">Error</p>
+                <p class="text-xs text-red-700 mt-1">Please fix the validation errors.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Badges Section -->
+    <div class="subsection">
+      <h3 class="text-2xl font-semibold mb-6 text-gray-900">Status Badges</h3>
+      <div class="badge-group">
+        <span class="badge badge-success">✓ Active</span>
+        <span class="badge badge-warning">⚠ Pending</span>
+        <span class="badge badge-error">✕ Failed</span>
+        <span class="badge badge-neutral">○ Neutral</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Design Tokens Section -->
+<section id="tokens" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Design Tokens</h2>
+
+    <!-- Color Tokens -->
+    <div class="subsection">
+      <h3 class="text-2xl font-semibold mb-6 text-gray-900">Color Palette</h3>
+      <div class="color-grid">
+        <div class="color-swatch">
+          <div class="swatch primary"></div>
+          <p class="text-xs font-mono text-gray-600">#2563EB</p>
+          <p class="text-xs font-semibold">Primary Blue</p>
+        </div>
+        <div class="color-swatch">
+          <div class="swatch secondary"></div>
+          <p class="text-xs font-mono text-gray-600">#3B82F6</p>
+          <p class="text-xs font-semibold">Secondary Blue</p>
+        </div>
+        <div class="color-swatch">
+          <div class="swatch accent"></div>
+          <p class="text-xs font-mono text-gray-600">#EA580C</p>
+          <p class="text-xs font-semibold">Action Orange</p>
+        </div>
+        <div class="color-swatch">
+          <div class="swatch success"></div>
+          <p class="text-xs font-mono text-gray-600">#10B981</p>
+          <p class="text-xs font-semibold">Success Green</p>
+        </div>
+        <div class="color-swatch">
+          <div class="swatch warning"></div>
+          <p class="text-xs font-mono text-gray-600">#F59E0B</p>
+          <p class="text-xs font-semibold">Warning Amber</p>
+        </div>
+        <div class="color-swatch">
+          <div class="swatch destructive"></div>
+          <p class="text-xs font-mono text-gray-600">#DC2626</p>
+          <p class="text-xs font-semibold">Error Red</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Spacing Tokens -->
+    <div class="subsection">
+      <h3 class="text-2xl font-semibold mb-6 text-gray-900">Spacing Scale (8px base)</h3>
+      <div class="spacing-demo">
+        <div class="spacing-item" style="width: 4px;">xs: 4px</div>
+        <div class="spacing-item" style="width: 8px;">sm: 8px</div>
+        <div class="spacing-item" style="width: 16px;">md: 16px</div>
+        <div class="spacing-item" style="width: 24px;">lg: 24px</div>
+        <div class="spacing-item" style="width: 32px;">xl: 32px</div>
+        <div class="spacing-item" style="width: 48px;">2xl: 48px</div>
+        <div class="spacing-item" style="width: 64px;">3xl: 64px</div>
+      </div>
+    </div>
+
+    <!-- Typography Scale -->
+    <div class="subsection">
+      <h3 class="text-2xl font-semibold mb-6 text-gray-900">Typography Scale</h3>
+      <div class="typography-demo">
+        <p class="display-text">56px Display (Hero) — Bold, Impact</p>
+        <p class="text-4xl font-bold text-gray-900 mt-8">48px H1 — Page Title</p>
+        <p class="text-3xl font-semibold text-gray-900 mt-8">32px H2 — Section Title</p>
+        <p class="text-2xl font-semibold text-gray-900 mt-8">24px H3 — Subsection</p>
+        <p class="text-base text-gray-900 leading-relaxed mt-8">16px Body — Primary reading text with 1.5 line-height for legibility</p>
+        <p class="text-sm text-gray-600 mt-8">14px Body Secondary — Supporting text with reduced emphasis</p>
+        <p class="text-xs text-gray-500 mt-8">12px Label/UI — Action labels, metadata, descriptions</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section-cta">
+  <div class="container">
+    <div class="cta-content">
+      <h2 class="text-4xl font-bold text-white mb-4">Ready to Transform Your Design?</h2>
+      <p class="text-lg text-blue-100 mb-8 max-w-2xl">
+        Join design-forward PMEs and agencies using UI/UX Pro Max to ship premium interfaces with confidence.
+      </p>
+      <div class="cta-buttons">
+        <button class="btn btn-white">Start Free Trial</button>
+        <button class="btn btn-outline-white">Schedule Demo</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4 class="text-sm font-semibold text-white mb-4">Product</h4>
+        <ul class="footer-links">
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Documentation</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4 class="text-sm font-semibold text-white mb-4">Company</h4>
+        <ul class="footer-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4 class="text-sm font-semibold text-white mb-4">Legal</h4>
+        <ul class="footer-links">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Security</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <p class="text-sm text-gray-400">© 2026 UI/UX Pro Max. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
