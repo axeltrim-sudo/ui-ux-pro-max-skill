@@ -1,4 +1,15 @@
 {
+  "extraKnownMarketplaces": {
+    "everything-claude-code": {
+      "source": {
+        "source": "github",
+        "repo": "WorldFlowAI/everything-claude-code"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "everything-claude-code@everything-claude-code": true
+  },
   "hooks": {
     "PreToolUse": [
       {
@@ -8,8 +19,7 @@
             "type": "command",
             "command": "node \"${CLAUDE_PROJECT_DIR}/.claude/scripts/hooks/tool-hooks.js\" pre-bash"
           }
-        ],
-        "description": "Block dev servers outside tmux, tmux reminder for long commands, review reminder before git push"
+        ]
       },
       {
         "matcher": "Edit|Write",
@@ -18,32 +28,7 @@
             "type": "command",
             "command": "node \"${CLAUDE_PROJECT_DIR}/.claude/scripts/hooks/suggest-compact.js\""
           }
-        ],
-        "description": "Suggest manual compaction at logical intervals"
-      }
-    ],
-    "PreCompact": [
-      {
-        "matcher": "*",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "node \"${CLAUDE_PROJECT_DIR}/.claude/scripts/hooks/pre-compact.js\""
-          }
-        ],
-        "description": "Save state before context compaction"
-      }
-    ],
-    "SessionStart": [
-      {
-        "matcher": "*",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "node \"${CLAUDE_PROJECT_DIR}/.claude/scripts/hooks/session-start.js\""
-          }
-        ],
-        "description": "Load previous context and detect package manager on new session"
+        ]
       }
     ],
     "PostToolUse": [
@@ -54,8 +39,7 @@
             "type": "command",
             "command": "node \"${CLAUDE_PROJECT_DIR}/.claude/scripts/hooks/tool-hooks.js\" post-bash"
           }
-        ],
-        "description": "Log PR URL and provide review command after PR creation"
+        ]
       },
       {
         "matcher": "Edit",
@@ -64,42 +48,7 @@
             "type": "command",
             "command": "node \"${CLAUDE_PROJECT_DIR}/.claude/scripts/hooks/tool-hooks.js\" post-edit"
           }
-        ],
-        "description": "Prettier, TypeScript check and console.log warning after editing JS/TS files"
-      }
-    ],
-    "Stop": [
-      {
-        "matcher": "*",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "node -e \"const{execSync}=require('child_process');const fs=require('fs');let d='';process.stdin.on('data',c=>d+=c);process.stdin.on('end',()=>{try{execSync('git rev-parse --git-dir',{stdio:'pipe'})}catch{console.log(d);process.exit(0)}try{const files=execSync('git diff --name-only HEAD',{encoding:'utf8',stdio:['pipe','pipe','pipe']}).split('\\n').filter(f=>/\\.(ts|tsx|js|jsx)$/.test(f)&&fs.existsSync(f));let hasConsole=false;for(const f of files){if(fs.readFileSync(f,'utf8').includes('console.log')){console.error('[Hook] WARNING: console.log found in '+f);hasConsole=true}}if(hasConsole)console.error('[Hook] Remove console.log statements before committing')}catch(e){}console.log(d)})\""
-          }
-        ],
-        "description": "Check for console.log in modified files after each response"
-      }
-    ],
-    "SessionEnd": [
-      {
-        "matcher": "*",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "node \"${CLAUDE_PROJECT_DIR}/.claude/scripts/hooks/session-end.js\""
-          }
-        ],
-        "description": "Persist session state on end"
-      },
-      {
-        "matcher": "*",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "node \"${CLAUDE_PROJECT_DIR}/.claude/scripts/hooks/evaluate-session.js\""
-          }
-        ],
-        "description": "Evaluate session for extractable patterns"
+        ]
       }
     ]
   }
