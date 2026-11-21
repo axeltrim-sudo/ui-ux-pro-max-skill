@@ -30,6 +30,17 @@
       ],
       "category": "design",
       "strict": false
+    },
+    {
+      "name": "autre-technique-ecommerce",
+      "source": "./plugins/autre-technique-ecommerce",
+      "description": "162 skills e-commerce (Amazon, Shopify, eBay, Etsy, TikTok Shop, Walmart) issus de nexscope-ai/eCommerce-Skills.",
+      "version": "1.0.0",
+      "author": {
+        "name": "nexscope-ai"
+      },
+      "category": "ecommerce",
+      "strict": false
     }
   ]
 }

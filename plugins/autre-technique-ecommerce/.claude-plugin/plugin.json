@@ -1,0 +1,9 @@
+{
+  "name": "autre-technique-ecommerce",
+  "description": "162 skills e-commerce (Amazon, Shopify, eBay, Etsy, TikTok Shop, Walmart, WooCommerce) issus de nexscope-ai/eCommerce-Skills : pricing, SEO, ads, listings, retention, supply chain, monitoring.",
+  "version": "1.0.0",
+  "author": { "name": "nexscope-ai (repackaged)" },
+  "homepage": "https://github.com/nexscope-ai/eCommerce-Skills",
+  "license": "MIT",
+  "keywords": ["ecommerce", "shopify", "amazon", "etsy", "tiktok-shop", "walmart", "ebay"]
+}
