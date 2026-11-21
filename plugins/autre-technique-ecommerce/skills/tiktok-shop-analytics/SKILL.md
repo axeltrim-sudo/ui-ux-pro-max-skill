@@ -1,7 +1,6 @@
 ---
 name: tiktok-shop-analytics
 description: "TikTok Shop analytics and performance tracking. Video metrics, live selling data, affiliate performance, advertising analytics, and business intelligence. Use when the user asks about TikTok Shop analytics, performance tracking, metrics analysis, or data-driven optimization."
-metadata: {"nexscope":{"emoji":"📊","category":"tiktok-shop"}}
 ---
 
 # TikTok Shop Analytics 📊

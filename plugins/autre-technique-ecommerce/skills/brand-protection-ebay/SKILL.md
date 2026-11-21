@@ -1,8 +1,6 @@
 ---
 name: brand-protection-ebay
-version: 1.0.0
 description: "eBay brand protection toolkit. Detect unauthorized sellers, counterfeits, and VeRO violations. Includes price monitoring, trademark abuse detection, VeRO complaint templates, and enforcement guides. No API key required."
-metadata: {"nexscope":{"emoji":"🛡️","category":"ecommerce"}}
 ---
 
 # Brand Protection — eBay 🛡️

@@ -1,9 +1,6 @@
 ---
 name: shopify-facebook-instagram-shop
 description: "Social selling setup — Facebook Shop, Instagram Shopping, product tagging, social checkout"
-metadata:
-  nexscope:
-    category: shopify
 ---
 
 # Shopify Facebook & Instagram Shop

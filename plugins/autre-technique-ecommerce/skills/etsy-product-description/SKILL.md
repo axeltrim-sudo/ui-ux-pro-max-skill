@@ -1,9 +1,6 @@
 ---
 name: etsy-product-description
 description: "Product description writing — keyword integration, benefit-focused copy, FAQ, formatting"
-metadata:
-  nexscope:
-    category: etsy
 ---
 
 # Etsy Product Description

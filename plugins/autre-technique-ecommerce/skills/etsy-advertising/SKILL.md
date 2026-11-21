@@ -1,9 +1,6 @@
 ---
 name: etsy-advertising
 description: "Etsy Ads strategy — budget allocation, bid management, promoted listings, offsite ads opt-out analysis"
-metadata:
-  nexscope:
-    category: etsy
 ---
 
 # Etsy Advertising

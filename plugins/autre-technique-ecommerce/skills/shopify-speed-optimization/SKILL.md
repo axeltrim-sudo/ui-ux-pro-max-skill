@@ -1,9 +1,6 @@
 ---
 name: shopify-speed-optimization
 description: "Store speed audit — lazy loading, image compression, app bloat removal, theme code optimization"
-metadata:
-  nexscope:
-    category: shopify
 ---
 
 # Shopify Speed Optimization

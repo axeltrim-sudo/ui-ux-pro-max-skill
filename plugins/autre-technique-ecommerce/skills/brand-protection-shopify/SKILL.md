@@ -1,9 +1,6 @@
 ---
 name: brand-protection-shopify
-version: 1.0.0
-author: Nexscope AI
 description: "Shopify/DTC brand protection toolkit. Detect counterfeit stores, unauthorized resellers, and trademark violations. Includes DMCA takedown templates, domain monitoring, and social media infringement detection. No API key required."
-metadata: {"nexscope":{"emoji":"🛡️","category":"ecommerce"}}
 ---
 
 # Brand Protection — Shopify/DTC 🛡️

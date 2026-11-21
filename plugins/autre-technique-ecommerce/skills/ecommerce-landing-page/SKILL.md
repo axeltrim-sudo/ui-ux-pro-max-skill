@@ -1,10 +1,6 @@
 ---
 name: ecommerce-landing-page
 description: "Audit and optimize e-commerce landing pages for conversion. CTA placement, trust signals, page structure, copy optimization, and A/B testing strategy for product pages, collection pages, and campaign landing pages."
-metadata:
-  nexscope:
-    emoji: "🖥️"
-    category: ecommerce
 ---
 
 # E-Commerce Landing Page 🖥️

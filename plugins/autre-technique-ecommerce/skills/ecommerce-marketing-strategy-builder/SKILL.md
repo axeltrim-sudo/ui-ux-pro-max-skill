@@ -1,10 +1,6 @@
 ---
 name: ecommerce-marketing-strategy-builder
 description: "Full-stack e-commerce marketing strategy builder. Analyzes your product, market, and competitors, then builds a complete omnichannel marketing plan covering paid ads, SEO, email/SMS, content marketing, social media, influencer partnerships, and referral programs. Includes target audience persona, competitive landscape, channel prioritization with budget allocation, content direction, and a 90-day action plan. Works for any e-commerce platform — Shopify, Amazon, Etsy, WooCommerce, TikTok Shop, and more. No API key required."
-metadata:
-  nexscope:
-    emoji: 🎯
-    category: ecommerce
 ---
 
 # E-Commerce Marketing Strategy Builder 🎯

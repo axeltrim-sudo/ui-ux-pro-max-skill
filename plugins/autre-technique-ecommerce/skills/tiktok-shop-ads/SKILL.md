@@ -1,7 +1,6 @@
 ---
 name: tiktok-shop-ads
 description: "TikTok Shop advertising strategy and campaign management. Product Shopping Ads, Video Shopping Ads, Live Shopping Ads, bidding optimization, and performance tracking. Use when the user asks about TikTok Shop advertising, paid ads, campaign setup, or TikTok Shop marketing."
-metadata: {"nexscope":{"emoji":"📢","category":"tiktok-shop"}}
 ---
 
 # TikTok Shop Ads 📢

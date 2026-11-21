@@ -1,10 +1,6 @@
 ---
 name: product-title-optimization
 description: "Optimize product titles for search visibility and click-through rate across e-commerce platforms. Platform-specific title rules for Amazon (200 chars), Etsy (140 chars), Walmart, Shopify SEO, and eBay."
-metadata:
-  nexscope:
-    emoji: "✏️"
-    category: ecommerce
 ---
 
 # Product Title Optimization ✏️

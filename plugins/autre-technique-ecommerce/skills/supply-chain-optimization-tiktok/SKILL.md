@@ -1,8 +1,6 @@
 ---
 name: supply-chain-optimization-tiktok
-version: 1.0.0
 description: "Supply Chain Bottleneck Analyzer for TikTok Shop sellers. Diagnose cash flow, inventory turnover, affiliate commissions, and return rates. Includes FBT cost analysis, influencer payout optimization, and viral product lifecycle management. No API key required for basic analysis."
-metadata: {"nexscope":{"emoji":"📦","category":"ecommerce"}}
 ---
 
 # Supply Chain Optimization — TikTok Shop 📦

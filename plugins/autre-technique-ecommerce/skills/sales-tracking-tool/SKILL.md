@@ -1,10 +1,6 @@
 ---
 name: sales-tracking-tool
 description: "Track and analyze e-commerce sales performance across platforms. Set up KPI dashboards, trend analysis, and performance alerts to catch issues and opportunities early."
-metadata:
-  nexscope:
-    emoji: "📉"
-    category: ecommerce
 ---
 
 # Sales Tracking Tool 📉

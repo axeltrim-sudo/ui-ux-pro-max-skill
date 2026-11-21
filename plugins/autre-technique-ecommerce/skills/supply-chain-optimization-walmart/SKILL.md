@@ -1,8 +1,6 @@
 ---
 name: supply-chain-optimization-walmart
-version: 1.0.0
 description: "Supply Chain Bottleneck Analyzer for Walmart Marketplace sellers. Diagnose cash flow, inventory, WFS costs, and referral fees. Includes comparison with Amazon FBA, lower storage fee optimization, and Walmart Connect ad spend analysis. No API key required for basic analysis."
-metadata: {"nexscope":{"emoji":"📦","category":"ecommerce"}}
 ---
 
 # Supply Chain Optimization — Walmart 📦

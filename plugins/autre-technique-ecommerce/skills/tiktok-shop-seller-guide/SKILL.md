@@ -1,7 +1,6 @@
 ---
 name: tiktok-shop-seller-guide
 description: "Complete TikTok Shop selling guide. Setup, listing optimization, content strategy, live selling, creator affiliates, and scaling strategies. Use when the user asks about TikTok Shop setup, how to sell on TikTok, TikTok Shop guide, or getting started with TikTok Shop."
-metadata: {"nexscope":{"emoji":"🏪","category":"tiktok-shop"}}
 ---
 
 # TikTok Shop Seller Guide 🏪

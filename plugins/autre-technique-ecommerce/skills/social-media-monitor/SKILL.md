@@ -1,10 +1,6 @@
 ---
 name: social-media-monitor
 description: "Monitor social media mentions, trends, and competitor activity for e-commerce brands. Set up listening workflows across Reddit, TikTok, Instagram, Twitter/X, and YouTube."
-metadata:
-  nexscope:
-    emoji: "📱"
-    category: ecommerce
 ---
 
 # Social Media Monitor 📱

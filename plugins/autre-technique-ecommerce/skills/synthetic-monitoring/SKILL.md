@@ -1,19 +1,6 @@
 ---
-nexscope:
-  name: "Synthetic Monitoring"
-  category: "Monitoring & Alerts"
-  version: "1.0.0"
-  author: "Nexscope AI"
-  tags:
-    - "monitoring"
-    - "checkout"
-    - "uptime"
-    - "testing"
-    - "ecommerce"
-  model: "any"
-  tokens: "~2000"
-  keywords:
-    - "synthetic monitoring"
+name: synthetic-monitoring
+description: "Synthetic Monitoring. AI-powered synthetic monitoring skill for e-commerce websites. Designs automated user journey tests for add-to-cart, checkout, and payment flows with alerting rules and performance baselines."
 ---
 
 # Synthetic Monitoring

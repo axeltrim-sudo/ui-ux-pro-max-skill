@@ -1,20 +1,6 @@
 ---
-nexscope:
-  name: "Minimum Advertised Price"
-  category: "Pricing & Profitability"
-  version: "1.0.0"
-  author: "Nexscope AI"
-  tags:
-    - "MAP"
-    - "pricing"
-    - "compliance"
-    - "brand-protection"
-  model: "any"
-  tokens: "~2000"
-  keywords:
-    - "minimum advertised price"
-    - "map enforcement"
-    - "map violation monitoring"
+name: minimum-advertised-price
+description: "Minimum Advertised Price. AI-powered MAP (Minimum Advertised Price) policy and enforcement skill. Helps brands create MAP policies, monitor violations across channels, manage dealer compliance, and design enforcement workflows."
 ---
 
 # Minimum Advertised Price

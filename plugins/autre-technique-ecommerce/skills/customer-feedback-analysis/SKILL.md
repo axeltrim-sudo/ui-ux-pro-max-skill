@@ -1,19 +1,6 @@
 ---
-nexscope:
-  name: "Customer Feedback Analysis"
-  category: "Reviews & Reputation"
-  version: "1.0.0"
-  author: "Nexscope AI"
-  tags:
-    - "reviews"
-    - "sentiment-analysis"
-    - "customer-feedback"
-    - "product-improvement"
-  model: "any"
-  tokens: "~2000"
-  keywords:
-    - "customer feedback analysis"
-    - "review sentiment analysis"
+name: customer-feedback-analysis
+description: "Customer Feedback Analysis. AI-powered customer feedback and review sentiment analysis skill. Extracts pain points, feature requests, and improvement priorities from customer reviews across e-commerce platforms."
 ---
 
 # Customer Feedback Analysis

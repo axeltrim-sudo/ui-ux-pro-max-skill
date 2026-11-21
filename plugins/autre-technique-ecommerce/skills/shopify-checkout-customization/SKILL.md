@@ -1,9 +1,6 @@
 ---
 name: shopify-checkout-customization
 description: "Checkout optimization — Checkout Extensibility, custom fields, express payments, trust elements"
-metadata:
-  nexscope:
-    category: shopify
 ---
 
 # Shopify Checkout Customization

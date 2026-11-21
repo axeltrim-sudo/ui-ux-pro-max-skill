@@ -1,9 +1,6 @@
 ---
 name: shopify-theme-optimization
 description: "Theme speed and UX optimization — Core Web Vitals, Liquid code, image loading, mobile responsiveness"
-metadata:
-  nexscope:
-    category: shopify
 ---
 
 # Shopify Theme Optimization

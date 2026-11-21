@@ -1,18 +1,6 @@
 ---
-nexscope:
-  name: "Walmart Price Tracker"
-  category: "Monitoring & Alerts"
-  version: "1.0.0"
-  author: "Nexscope AI"
-  tags:
-    - "walmart"
-    - "price-tracking"
-    - "monitoring"
-    - "competitor-analysis"
-  model: "any"
-  tokens: "~2000"
-  keywords:
-    - "walmart price tracker"
+name: walmart-price-tracker
+description: "Walmart Price Tracker. AI-powered Walmart price tracking and competitive pricing skill. Analyzes Walmart marketplace pricing trends, competitor price positioning, and generates repricing strategies for Walmart sellers."
 ---
 
 # Walmart Price Tracker

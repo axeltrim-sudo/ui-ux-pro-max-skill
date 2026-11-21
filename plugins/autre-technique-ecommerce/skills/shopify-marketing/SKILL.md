@@ -1,7 +1,6 @@
 ---
 name: shopify-marketing
 description: "Comprehensive Shopify marketing strategy and execution. SEO optimization, email marketing automation, paid advertising management, conversion rate optimization, and customer retention strategies specifically for DTC Shopify brands. Use when the user asks about Shopify marketing, DTC marketing, Shopify SEO, or Shopify store growth."
-metadata: {"nexscope":{"emoji":"🟢","category":"shopify"}}
 ---
 
 # Shopify Marketing 🟢

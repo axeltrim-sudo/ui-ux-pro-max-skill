@@ -1,9 +1,6 @@
 ---
 name: etsy-seo
-version: 1.0.0
-author: Nexscope AI
 description: "Etsy SEO analyzer and optimizer. Improve search visibility with title optimization, tag analysis, description scoring, and keyword research. Includes SEO scoring (0-100), long-tail keyword suggestions, and prioritized action plans. No API key required."
-metadata: {"nexscope":{"emoji":"🔍","category":"ecommerce"}}
 ---
 
 # Etsy SEO 🔍

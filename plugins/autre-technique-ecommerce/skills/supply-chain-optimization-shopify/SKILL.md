@@ -1,8 +1,6 @@
 ---
 name: supply-chain-optimization-shopify
-version: 1.0.0
 description: "Supply Chain Bottleneck Analyzer for Shopify/DTC stores. Diagnose cash flow, inventory, shipping costs, and customer acquisition efficiency. Includes CAC/LTV analysis, 3PL cost optimization, and ad spend benchmarks. No API key required for basic analysis."
-metadata: {"nexscope":{"emoji":"📦","category":"ecommerce"}}
 ---
 
 # Supply Chain Optimization — Shopify/DTC 📦

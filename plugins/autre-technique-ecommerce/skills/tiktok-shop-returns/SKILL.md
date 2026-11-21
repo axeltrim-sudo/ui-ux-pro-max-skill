@@ -1,9 +1,6 @@
 ---
 name: tiktok-shop-returns
 description: "Return policy and process — TikTok Shop policies, return rate reduction, customer communication"
-metadata:
-  nexscope:
-    category: tiktok-shop
 ---
 
 # TikTok Shop Returns

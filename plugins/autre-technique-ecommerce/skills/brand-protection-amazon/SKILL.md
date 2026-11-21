@@ -1,8 +1,6 @@
 ---
 name: brand-protection-amazon
-version: 1.0.0
 description: "Amazon brand protection toolkit. Detect hijackers, counterfeits, and unauthorized sellers. Includes MAP violation monitoring, trademark abuse detection, complaint templates for Brand Registry, and test buy evidence collection guides. No API key required."
-metadata: {"nexscope":{"emoji":"🛡️","category":"ecommerce"}}
 ---
 
 # Brand Protection — Amazon 🛡️

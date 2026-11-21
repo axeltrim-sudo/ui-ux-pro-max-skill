@@ -1,9 +1,6 @@
 ---
 name: etsy-custom-orders
 description: "Custom order management — communication templates, pricing, delivery timelines, return policies"
-metadata:
-  nexscope:
-    category: etsy
 ---
 
 # Etsy Custom Orders

@@ -1,10 +1,6 @@
 ---
 name: dropshipping-product-research
 description: "Product research for dropshipping businesses. Identify profitable products with reliable suppliers, healthy margins, and manageable competition. Evaluates shipping times, return risk, and marketing viability."
-metadata:
-  nexscope:
-    emoji: "📦"
-    category: ecommerce
 ---
 
 # Dropshipping Product Research 📦

@@ -1,10 +1,6 @@
 ---
 name: ecommerce-personalization
 description: "Design personalization strategies for e-commerce stores. Product recommendations, dynamic content, customer segmentation, and personalized email/SMS based on browsing and purchase behavior."
-metadata:
-  nexscope:
-    emoji: "🎯"
-    category: ecommerce
 ---
 
 # E-Commerce Personalization 🎯

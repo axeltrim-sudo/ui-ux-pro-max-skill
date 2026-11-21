@@ -1,8 +1,6 @@
 ---
 name: amazon-review-checker
-version: 1.0.0
 description: "Amazon review authenticity analyzer. Detect fake reviews, suspicious patterns, and rating manipulation. Includes time clustering detection, content similarity analysis, rating distribution checks, and verified purchase validation. Progressive analysis with L1-L4 depth levels. No API key required."
-metadata: {"nexscope":{"emoji":"🔍","category":"ecommerce"}}
 ---
 
 # Amazon Review Checker 🔍

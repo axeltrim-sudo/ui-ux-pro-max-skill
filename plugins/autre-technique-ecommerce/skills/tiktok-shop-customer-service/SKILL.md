@@ -1,9 +1,6 @@
 ---
 name: tiktok-shop-customer-service
 description: "Customer service on TikTok Shop — response time, dispute resolution, auto-replies, buyer satisfaction"
-metadata:
-  nexscope:
-    category: tiktok-shop
 ---
 
 # TikTok Shop Customer Service

@@ -1,9 +1,6 @@
 ---
 name: tiktok-shop-conversion
 description: "Conversion optimization — product detail pages, video hooks, urgency tactics, checkout flow"
-metadata:
-  nexscope:
-    category: tiktok-shop
 ---
 
 # TikTok Shop Conversion Optimization

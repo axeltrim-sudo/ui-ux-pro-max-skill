@@ -1,9 +1,6 @@
 ---
 name: shopify-app-recommendations
 description: "App stack advisor — essential apps by business stage, cost optimization, performance impact analysis"
-metadata:
-  nexscope:
-    category: shopify
 ---
 
 # Shopify App Recommendations

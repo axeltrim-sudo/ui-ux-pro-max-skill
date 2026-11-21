@@ -1,20 +1,6 @@
 ---
-nexscope:
-  name: "Domain Monitoring"
-  category: "Monitoring & Alerts"
-  version: "1.0.0"
-  author: "Nexscope AI"
-  tags:
-    - "domain"
-    - "ssl"
-    - "security"
-    - "monitoring"
-    - "ecommerce"
-  model: "any"
-  tokens: "~2000"
-  keywords:
-    - "domain monitoring"
-    - "ssl monitoring"
+name: domain-monitoring
+description: "Domain Monitoring. AI-powered domain and SSL certificate monitoring skill. Designs domain health checks, SSL expiry alerts, DNS anomaly detection, and security rating assessments for e-commerce websites."
 ---
 
 # Domain Monitoring

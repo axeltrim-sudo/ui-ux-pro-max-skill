@@ -1,9 +1,6 @@
 ---
 name: tiktok-shop-pricing
 description: "Pricing strategy for TikTok — competitive pricing, commission impact, bundling, discount psychology"
-metadata:
-  nexscope:
-    category: tiktok-shop
 ---
 
 # TikTok Shop Pricing

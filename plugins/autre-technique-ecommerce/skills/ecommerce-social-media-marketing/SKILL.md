@@ -1,7 +1,6 @@
 ---
 name: ecommerce-social-media-marketing
 description: "Social media marketing strategy for ecommerce brands. Content calendar planning, platform-specific strategies, social commerce optimization, influencer collaboration, and community building. Use when the user asks about social media marketing, social commerce, content strategy, or social media for ecommerce."
-metadata: {"nexscope":{"emoji":"📱","category":"ecommerce"}}
 ---
 
 # E-commerce Social Media Marketing 📱

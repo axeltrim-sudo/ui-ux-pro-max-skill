@@ -1,9 +1,6 @@
 ---
 name: etsy-seo-tags
 description: "Etsy tag optimization — 13-tag strategy, attribute optimization, search ranking factors"
-metadata:
-  nexscope:
-    category: etsy
 ---
 
 # Etsy SEO Tags

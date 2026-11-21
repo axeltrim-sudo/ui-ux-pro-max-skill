@@ -1,9 +1,6 @@
 ---
 name: shopify-email-flows
 description: "Email automation flows — welcome series, abandoned cart, post-purchase, win-back, browse abandonment"
-metadata:
-  nexscope:
-    category: shopify
 ---
 
 # Shopify Email Flows

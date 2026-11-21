@@ -1,9 +1,6 @@
 ---
 name: etsy-digital-products
 description: "Digital product creation and selling — templates, printables, planners, digital art, delivery setup"
-metadata:
-  nexscope:
-    category: etsy
 ---
 
 # Etsy Digital Products

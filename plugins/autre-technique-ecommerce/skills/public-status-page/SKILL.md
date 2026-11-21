@@ -1,18 +1,6 @@
 ---
-nexscope:
-  name: "Public Status Page"
-  category: "Monitoring & Alerts"
-  version: "1.0.0"
-  author: "Nexscope AI"
-  tags:
-    - "status-page"
-    - "incident-communication"
-    - "transparency"
-    - "monitoring"
-  model: "any"
-  tokens: "~2000"
-  keywords:
-    - "public status page"
+name: public-status-page
+description: "Public Status Page. AI-powered public status page design skill for e-commerce businesses. Creates status page architecture, incident communication templates, subscriber notification systems, and uptime reporting frameworks."
 ---
 
 # Public Status Page

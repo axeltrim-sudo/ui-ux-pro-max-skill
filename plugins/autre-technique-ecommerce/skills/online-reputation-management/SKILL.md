@@ -1,18 +1,6 @@
 ---
-nexscope:
-  name: "Online Reputation Management"
-  category: "Monitoring & Alerts"
-  version: "1.0.0"
-  author: "Nexscope AI"
-  tags:
-    - "reputation"
-    - "brand-monitoring"
-    - "crisis-management"
-    - "review-management"
-  model: "any"
-  tokens: "~2000"
-  keywords:
-    - "online reputation management"
+name: online-reputation-management
+description: "Online Reputation Management. AI-powered online reputation management skill for e-commerce brands. Builds reputation monitoring frameworks, negative review response strategies, rating recovery plans, and crisis communication templates."
 ---
 
 # Online Reputation Management

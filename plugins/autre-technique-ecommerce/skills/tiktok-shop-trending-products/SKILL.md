@@ -1,9 +1,6 @@
 ---
 name: tiktok-shop-trending-products
 description: "Trending product discovery — viral product analysis, category trends, seasonal opportunities on TikTok"
-metadata:
-  nexscope:
-    category: tiktok-shop
 ---
 
 # TikTok Shop Trending Products

@@ -1,7 +1,6 @@
 ---
 name: tiktok-shop-branding
 description: "Brand building and positioning on TikTok Shop. Brand identity development, content pillars, community engagement, brand storytelling, and authenticity strategies. Use when the user asks about TikTok branding, brand building, brand identity, or brand positioning on TikTok."
-metadata: {"nexscope":{"emoji":"🎨","category":"tiktok-shop"}}
 ---
 
 # TikTok Shop Branding 🎨

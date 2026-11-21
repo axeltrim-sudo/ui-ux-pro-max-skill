@@ -1,10 +1,6 @@
 ---
 name: walmart-listing-optimization
 description: "Optimize Walmart Marketplace product listings for search visibility and conversion. Covers Walmart SEO, content quality scoring, rich media, and Walmart-specific listing requirements."
-metadata:
-  nexscope:
-    emoji: "🏪"
-    category: walmart
 ---
 
 # Walmart Listing Optimization 🏪

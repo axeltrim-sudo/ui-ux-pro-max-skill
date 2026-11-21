@@ -1,9 +1,6 @@
 ---
 name: tiktok-shop-compliance
 description: "TikTok Shop policies and compliance — restricted products, intellectual property, content guidelines"
-metadata:
-  nexscope:
-    category: tiktok-shop
 ---
 
 # TikTok Shop Compliance

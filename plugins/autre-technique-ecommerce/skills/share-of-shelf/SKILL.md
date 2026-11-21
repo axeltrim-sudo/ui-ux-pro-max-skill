@@ -1,18 +1,6 @@
 ---
-nexscope:
-  name: "Share of Shelf"
-  category: "Monitoring & Alerts"
-  version: "1.0.0"
-  author: "Nexscope AI"
-  tags:
-    - "digital-shelf"
-    - "visibility"
-    - "category-analysis"
-    - "monitoring"
-  model: "any"
-  tokens: "~2000"
-  keywords:
-    - "share of shelf"
+name: share-of-shelf
+description: "Share of Shelf. AI-powered digital share of shelf analysis skill. Measures brand visibility within product categories, benchmarks against competitors, and tracks shelf position trends across e-commerce platforms."
 ---
 
 # Share of Shelf

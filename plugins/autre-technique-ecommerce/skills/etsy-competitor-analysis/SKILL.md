@@ -1,9 +1,6 @@
 ---
 name: etsy-competitor-analysis
 description: "Competitor research — pricing comparison, bestseller analysis, differentiation strategy"
-metadata:
-  nexscope:
-    category: etsy
 ---
 
 # Etsy Competitor Analysis

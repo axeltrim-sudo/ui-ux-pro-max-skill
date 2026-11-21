@@ -1,7 +1,6 @@
 ---
 name: competitor-price-analysis
 description: "Competitor pricing strategy analysis and market positioning. Price mapping, pricing gaps identification, elasticity signals evaluation, and strategic pricing optimization. Use when the user asks about competitor pricing, price analysis, pricing strategy, or competitive pricing research."
-metadata: {"nexscope":{"emoji":"💲","category":"ecommerce"}}
 ---
 
 # Competitor Price Analysis 💲

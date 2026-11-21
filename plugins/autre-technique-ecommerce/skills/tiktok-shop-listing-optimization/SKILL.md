@@ -1,7 +1,6 @@
 ---
 name: tiktok-shop-listing-optimization
 description: "TikTok Shop product listing optimization. Titles, descriptions, images, videos, attributes, and search optimization for maximum visibility and conversions. Use when the user asks about TikTok Shop listing optimization, product SEO, or improving product visibility on TikTok."
-metadata: {"nexscope":{"emoji":"📝","category":"tiktok-shop"}}
 ---
 
 # TikTok Shop Listing Optimization 📝

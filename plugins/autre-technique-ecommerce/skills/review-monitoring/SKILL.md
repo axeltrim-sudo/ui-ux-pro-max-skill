@@ -1,10 +1,6 @@
 ---
 name: review-monitoring
 description: "Set up systematic review monitoring across e-commerce platforms. Track new reviews, detect negative review spikes, monitor competitor reviews, and automate review response workflows."
-metadata:
-  nexscope:
-    emoji: "👁️"
-    category: ecommerce
 ---
 
 # Review Monitoring 👁️

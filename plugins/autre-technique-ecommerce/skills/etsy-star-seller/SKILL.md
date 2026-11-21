@@ -1,9 +1,6 @@
 ---
 name: etsy-star-seller
 description: "Star Seller achievement guide — response time, shipping tracking, 5-star ratings, maintaining status"
-metadata:
-  nexscope:
-    category: etsy
 ---
 
 # Etsy Star Seller

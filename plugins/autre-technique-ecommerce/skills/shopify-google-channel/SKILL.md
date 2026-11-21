@@ -1,9 +1,6 @@
 ---
 name: shopify-google-channel
 description: "Google integration — Shopping feed, Performance Max, free listings, Merchant Center optimization"
-metadata:
-  nexscope:
-    category: shopify
 ---
 
 # Shopify Google Channel

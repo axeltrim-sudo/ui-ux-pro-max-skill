@@ -1,9 +1,6 @@
 ---
 name: etsy-multi-shop
 description: "Multi-shop management — category separation, brand differentiation, efficiency optimization"
-metadata:
-  nexscope:
-    category: etsy
 ---
 
 # Etsy Multi-Shop Strategy

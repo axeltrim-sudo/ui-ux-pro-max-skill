@@ -1,9 +1,6 @@
 ---
-name: supply-chain-optimization-amazon-lite
-version: 1.0.0
-description: Supply Chain Optimization (Lite) - Diagnose bottlenecks and provide cost reduction strategies through conversation
-platform: amazon
-lang: en
+name: supply-chain-optimization-amazon
+description: "Supply Chain Optimization (Lite) - Diagnose bottlenecks and provide cost reduction strategies through conversation"
 ---
 
 # Supply Chain Optimization (Lite)

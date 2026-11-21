@@ -1,7 +1,6 @@
 ---
 name: product-review-analysis
 description: "Product review analysis and customer feedback intelligence. Pain point identification, praise pattern analysis, feature request extraction, sentiment analysis, and product improvement insights. Use when the user asks about review analysis, customer feedback, product reviews, or sentiment analysis."
-metadata: {"nexscope":{"emoji":"⭐","category":"ecommerce"}}
 ---
 
 # Product Review Analysis ⭐

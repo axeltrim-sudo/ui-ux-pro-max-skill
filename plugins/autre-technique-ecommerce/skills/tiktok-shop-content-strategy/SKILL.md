@@ -1,7 +1,6 @@
 ---
 name: tiktok-shop-content-strategy
 description: "TikTok Shop content creation strategy and planning. Trending formats, viral hooks, product showcasing, hashtag strategy, and content calendar development. Use when the user asks about TikTok content strategy, viral content creation, TikTok marketing, or content planning."
-metadata: {"nexscope":{"emoji":"🎬","category":"tiktok-shop"}}
 ---
 
 # TikTok Shop Content Strategy 🎬

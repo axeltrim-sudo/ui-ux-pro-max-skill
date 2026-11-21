@@ -1,10 +1,6 @@
 ---
 name: competitor-price-tracker
 description: "Set up competitor price tracking and monitoring workflows. Track price changes, detect promotions, analyze pricing patterns, and get alerts for competitive price movements."
-metadata:
-  nexscope:
-    emoji: "📊"
-    category: ecommerce
 ---
 
 # Competitor Price Tracker 📊

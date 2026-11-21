@@ -1,9 +1,6 @@
 ---
 name: etsy-shop-analytics
 description: "Shop analytics — traffic sources, conversion rates, search terms, top listings performance"
-metadata:
-  nexscope:
-    category: etsy
 ---
 
 # Etsy Shop Analytics

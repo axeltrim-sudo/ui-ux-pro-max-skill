@@ -1,8 +1,6 @@
 ---
 name: walmart-review-checker
-version: 1.0.0
 description: "Walmart review authenticity analyzer. Detect fake reviews, suspicious patterns, and rating manipulation. Includes WFS verified badge analysis, incentivized review detection, and Walmart-specific red flag identification. No API key required."
-metadata: {"nexscope":{"emoji":"🔍","category":"ecommerce"}}
 ---
 
 # Walmart Review Checker 🔍

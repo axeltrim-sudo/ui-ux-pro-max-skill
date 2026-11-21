@@ -1,9 +1,6 @@
 ---
 name: etsy-shop-setup
 description: "Etsy shop launch guide — policies, branding, first listings, SEO foundation, payment setup"
-metadata:
-  nexscope:
-    category: etsy
 ---
 
 # Etsy Shop Setup

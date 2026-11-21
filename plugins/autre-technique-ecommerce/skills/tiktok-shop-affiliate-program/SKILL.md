@@ -1,7 +1,6 @@
 ---
 name: tiktok-shop-affiliate-program
 description: "TikTok Shop affiliate program strategy and creator collaboration. Commission structures, creator recruitment, sample management, performance tracking, and partnership optimization. Use when the user asks about TikTok Shop affiliates, creator partnerships, or TikTok Shop Creator Fund."
-metadata: {"nexscope":{"emoji":"🤝","category":"tiktok-shop"}}
 ---
 
 # TikTok Shop Affiliate Program 🤝

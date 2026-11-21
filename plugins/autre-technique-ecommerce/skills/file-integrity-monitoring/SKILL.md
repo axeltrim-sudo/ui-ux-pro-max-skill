@@ -1,18 +1,6 @@
 ---
-nexscope:
-  name: "File Integrity Monitoring"
-  category: "Monitoring & Alerts"
-  version: "1.0.0"
-  author: "Nexscope AI"
-  tags:
-    - "security"
-    - "monitoring"
-    - "file-integrity"
-    - "ecommerce"
-  model: "any"
-  tokens: "~2000"
-  keywords:
-    - "file integrity monitoring"
+name: file-integrity-monitoring
+description: "File Integrity Monitoring. AI-powered file integrity monitoring skill for e-commerce websites. Designs file change detection systems, tamper alerts, security baselines, and recovery procedures to protect online stores."
 ---
 
 # File Integrity Monitoring

@@ -1,9 +1,6 @@
 ---
 name: tiktok-shop-fulfillment
 description: "Fulfillment setup — Fulfilled by TikTok, self-fulfillment, shipping templates, return policies"
-metadata:
-  nexscope:
-    category: tiktok-shop
 ---
 
 # TikTok Shop Fulfillment

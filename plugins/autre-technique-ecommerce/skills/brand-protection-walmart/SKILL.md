@@ -1,9 +1,6 @@
 ---
 name: brand-protection-walmart
-version: 1.0.0
-author: Nexscope AI
 description: "Walmart brand protection toolkit. Detect unauthorized sellers, counterfeits, and MAP violations. Includes Walmart Brand Portal reporting, WFS seller monitoring, and complaint templates. No API key required."
-metadata: {"nexscope":{"emoji":"🛡️","category":"ecommerce"}}
 ---
 
 # Brand Protection — Walmart 🛡️

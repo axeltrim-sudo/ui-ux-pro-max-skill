@@ -1,18 +1,6 @@
 ---
-nexscope:
-  name: "E-Commerce Feed Management"
-  category: "Monitoring & Alerts"
-  version: "1.0.0"
-  author: "Nexscope AI"
-  tags:
-    - "product-feed"
-    - "catalog"
-    - "monitoring"
-    - "data-quality"
-  model: "any"
-  tokens: "~2000"
-  keywords:
-    - "ecommerce feed management"
+name: ecommerce-feed-management
+description: "E-Commerce Feed Management. AI-powered product feed management and monitoring skill. Designs feed health checks, sync error diagnostics, missing SKU detection, and attribute completeness validation for e-commerce product catalogs."
 ---
 
 # E-Commerce Feed Management

@@ -1,7 +1,6 @@
 ---
 name: ecommerce-competitor-analysis
 description: "Cross-platform ecommerce competitor analysis and strategic intelligence. Multi-channel presence evaluation, strategy assessment, positioning analysis, and competitive benchmarking. Use when the user asks about competitor analysis, competitive research, market analysis, or competitive intelligence across platforms."
-metadata: {"nexscope":{"emoji":"🔍","category":"ecommerce"}}
 ---
 
 # E-commerce Competitor Analysis 🔍

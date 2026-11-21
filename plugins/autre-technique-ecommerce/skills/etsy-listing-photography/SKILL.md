@@ -1,9 +1,6 @@
 ---
 name: etsy-listing-photography
 description: "Product photography for Etsy — composition, lighting, backgrounds, editing, lifestyle shots, 360 views"
-metadata:
-  nexscope:
-    category: etsy
 ---
 
 # Etsy Listing Photography

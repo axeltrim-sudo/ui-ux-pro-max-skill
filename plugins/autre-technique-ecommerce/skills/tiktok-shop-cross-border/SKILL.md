@@ -1,7 +1,6 @@
 ---
 name: tiktok-shop-cross-border
 description: "Cross-border selling on TikTok Shop. Market selection, logistics setup, localization strategy, compliance requirements, and international expansion. Use when the user asks about TikTok Shop international selling, cross-border ecommerce, global expansion, or selling in multiple countries."
-metadata: {"nexscope":{"emoji":"🌍","category":"tiktok-shop"}}
 ---
 
 # TikTok Shop Cross-Border 🌍

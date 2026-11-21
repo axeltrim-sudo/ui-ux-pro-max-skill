@@ -1,8 +1,6 @@
 ---
 name: profit-margin-calculator-shopify
-version: 1.0.0
 description: "Shopify/DTC profit margin calculator for sellers. Calculate cost breakdowns including ad spend, CAC, payment processing fees, and 3PL costs. Includes LTV/CAC analysis and DTC-specific benchmarks. No API key required."
-metadata: {"nexscope":{"emoji":"💰","category":"ecommerce"}}
 ---
 
 # Profit Margin Calculator — Shopify/DTC 💰

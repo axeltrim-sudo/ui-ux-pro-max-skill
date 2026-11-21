@@ -1,9 +1,6 @@
 ---
 name: tiktok-shop-shipping
 description: "TikTok Shop shipping setup — carrier selection, shipping templates, delivery expectations"
-metadata:
-  nexscope:
-    category: tiktok-shop
 ---
 
 # TikTok Shop Shipping

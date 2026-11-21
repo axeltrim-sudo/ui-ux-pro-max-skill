@@ -1,9 +1,6 @@
 ---
 name: etsy-seasonal-strategy
 description: "Seasonal selling calendar — holiday prep, trending categories, listing refresh timing, inventory planning"
-metadata:
-  nexscope:
-    category: etsy
 ---
 
 # Etsy Seasonal Strategy

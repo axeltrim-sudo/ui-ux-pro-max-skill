@@ -1,9 +1,6 @@
 ---
 name: shopify-loyalty-program
 description: "Customer loyalty and rewards — points systems, VIP tiers, referral programs, app selection"
-metadata:
-  nexscope:
-    category: shopify
 ---
 
 # Shopify Loyalty Program

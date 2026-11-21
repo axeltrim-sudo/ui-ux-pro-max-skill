@@ -1,7 +1,6 @@
 ---
 name: tiktok-creator-marketplace
 description: "TikTok Creator Marketplace strategy and campaign management. Finding creators, negotiation tactics, campaign execution, performance tracking, and relationship building. Use when the user asks about TikTok Creator Marketplace, finding TikTok creators, creator partnerships, or influencer campaigns."
-metadata: {"nexscope":{"emoji":"🎭","category":"tiktok-shop"}}
 ---
 
 # TikTok Creator Marketplace 🎭

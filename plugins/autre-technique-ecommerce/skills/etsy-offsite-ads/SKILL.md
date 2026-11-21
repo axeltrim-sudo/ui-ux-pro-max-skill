@@ -1,9 +1,6 @@
 ---
 name: etsy-offsite-ads
 description: "Offsite Ads analysis — when to opt out, ROI tracking, fee impact on margins, attribution"
-metadata:
-  nexscope:
-    category: etsy
 ---
 
 # Etsy Offsite Ads

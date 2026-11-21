@@ -1,9 +1,6 @@
 ---
 name: shopify-landing-page-builder
 description: "High-converting landing pages — campaign pages, collection pages, seasonal promos, A/B testing"
-metadata:
-  nexscope:
-    category: shopify
 ---
 
 # Shopify Landing Page Builder

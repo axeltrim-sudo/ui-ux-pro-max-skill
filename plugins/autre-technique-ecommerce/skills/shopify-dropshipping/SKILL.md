@@ -1,9 +1,6 @@
 ---
 name: shopify-dropshipping
 description: "Dropshipping setup and scaling — supplier integration, automation, pricing strategy, customer experience"
-metadata:
-  nexscope:
-    category: shopify
 ---
 
 # Shopify Dropshipping

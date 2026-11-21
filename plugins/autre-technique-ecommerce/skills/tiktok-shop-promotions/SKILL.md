@@ -1,9 +1,6 @@
 ---
 name: tiktok-shop-promotions
 description: "TikTok Shop deals — Flash Deals, vouchers, free shipping, bundle deals, promotion planning"
-metadata:
-  nexscope:
-    category: tiktok-shop
 ---
 
 # TikTok Shop Promotions
